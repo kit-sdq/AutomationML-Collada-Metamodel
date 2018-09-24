@@ -49,7 +49,7 @@ public class ColladaPackageImpl extends EPackageImpl implements ColladaPackage {
 	 * <!-- end-user-doc -->
    * @generated
    */
-	protected String packageFilename = "collada.ecore";
+	protected String packageFilename = "../../../../../model/collada.ecore";
 
 	/**
    * <!-- begin-user-doc -->
