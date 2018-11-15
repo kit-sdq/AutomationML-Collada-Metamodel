@@ -36,132 +36,126 @@ import org.khronos.collada.TechniqueCommonType5;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.TechniqueCommonType5Impl#getInstanceMaterial <em>Instance Material</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class TechniqueCommonType5Impl extends EObjectImpl implements TechniqueCommonType5 {
 	/**
-   * The cached value of the '{@link #getInstanceMaterial() <em>Instance Material</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInstanceMaterial() <em>Instance Material</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getInstanceMaterial()
-   * @generated
-   * @ordered
-   */
+	 * @see #getInstanceMaterial()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<InstanceMaterialType> instanceMaterial;
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TechniqueCommonType5Impl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getTechniqueCommonType5();
-  }
+		return ColladaPackage.eINSTANCE.getTechniqueCommonType5();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<InstanceMaterialType> getInstanceMaterial() {
-    if (instanceMaterial == null)
-    {
-      instanceMaterial = new EObjectContainmentEList<InstanceMaterialType>(InstanceMaterialType.class, this, ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL);
-    }
-    return instanceMaterial;
-  }
+		if (instanceMaterial == null) {
+			instanceMaterial = new EObjectContainmentEList<InstanceMaterialType>(InstanceMaterialType.class, this, ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL);
+		}
+		return instanceMaterial;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
-        return ((InternalEList<?>)getInstanceMaterial()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
+				return ((InternalEList<?>)getInstanceMaterial()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
-        return getInstanceMaterial();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
+				return getInstanceMaterial();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
-        getInstanceMaterial().clear();
-        getInstanceMaterial().addAll((Collection<? extends InstanceMaterialType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
+				getInstanceMaterial().clear();
+				getInstanceMaterial().addAll((Collection<? extends InstanceMaterialType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
-        getInstanceMaterial().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
+				getInstanceMaterial().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
-        return instanceMaterial != null && !instanceMaterial.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE5__INSTANCE_MATERIAL:
+				return instanceMaterial != null && !instanceMaterial.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TechniqueCommonType5Impl

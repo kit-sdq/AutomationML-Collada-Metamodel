@@ -23,223 +23,223 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum GlFaceType implements Enumerator {
 	/**
-   * The '<em><b>FRONT</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FRONT</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #FRONT_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #FRONT_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	FRONT(0, "FRONT", "FRONT"),
 
 	/**
-   * The '<em><b>BACK</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>BACK</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #BACK_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #BACK_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	BACK(1, "BACK", "BACK"),
 
 	/**
-   * The '<em><b>FRONTANDBACK</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FRONTANDBACK</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #FRONTANDBACK_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #FRONTANDBACK_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	FRONTANDBACK(2, "FRONTANDBACK", "FRONT_AND_BACK");
 
 	/**
-   * The '<em><b>FRONT</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FRONT</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>FRONT</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #FRONT
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #FRONT
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int FRONT_VALUE = 0;
 
 	/**
-   * The '<em><b>BACK</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>BACK</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>BACK</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #BACK
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #BACK
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int BACK_VALUE = 1;
 
 	/**
-   * The '<em><b>FRONTANDBACK</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>FRONTANDBACK</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>FRONTANDBACK</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #FRONTANDBACK
-   * @model literal="FRONT_AND_BACK"
-   * @generated
-   * @ordered
-   */
+	 * @see #FRONTANDBACK
+	 * @model literal="FRONT_AND_BACK"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int FRONTANDBACK_VALUE = 2;
 
 	/**
-   * An array of all the '<em><b>Gl Face Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Gl Face Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private static final GlFaceType[] VALUES_ARRAY =
-		new GlFaceType[]
-    {
-      FRONT,
-      BACK,
-      FRONTANDBACK,
-    };
+		new GlFaceType[] {
+			FRONT,
+			BACK,
+			FRONTANDBACK,
+		};
 
 	/**
-   * A public read-only list of all the '<em><b>Gl Face Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Gl Face Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static final List<GlFaceType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-   * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified literal value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlFaceType get(String literal) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      GlFaceType result = VALUES_ARRAY[i];
-      if (result.toString().equals(literal))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			GlFaceType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified name.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlFaceType getByName(String name) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      GlFaceType result = VALUES_ARRAY[i];
-      if (result.getName().equals(name))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			GlFaceType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified integer value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gl Face Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlFaceType get(int value) {
-    switch (value)
-    {
-      case FRONT_VALUE: return FRONT;
-      case BACK_VALUE: return BACK;
-      case FRONTANDBACK_VALUE: return FRONTANDBACK;
-    }
-    return null;
-  }
+		switch (value) {
+			case FRONT_VALUE: return FRONT;
+			case BACK_VALUE: return BACK;
+			case FRONTANDBACK_VALUE: return FRONTANDBACK;
+		}
+		return null;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final int value;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String name;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String literal;
 
 	/**
-   * Only this class can construct instances.
-   * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private GlFaceType(int value, String name, String literal) {
-    this.value = value;
-    this.name = name;
-    this.literal = literal;
-  }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public int getValue() {
-    return value;
-  }
+	  return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getName() {
-    return name;
-  }
+	  return name;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getLiteral() {
-    return literal;
-  }
+	  return literal;
+	}
 
 	/**
-   * Returns the literal value of the enumerator, which is its string representation.
-   * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    return literal;
-  }
+		return literal;
+	}
 	
 } //GlFaceType

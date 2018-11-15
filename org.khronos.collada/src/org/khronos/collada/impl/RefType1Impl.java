@@ -22,238 +22,234 @@ import org.khronos.collada.RefType1;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.RefType1Impl#getParam <em>Param</em>}</li>
  *   <li>{@link org.khronos.collada.impl.RefType1Impl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class RefType1Impl extends EObjectImpl implements RefType1 {
 	/**
-   * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String PARAM_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected String param = PARAM_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final short VALUE_EDEFAULT = 0;
 
 	/**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected short value = VALUE_EDEFAULT;
 
 	/**
-   * This is true if the Value attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Value attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean valueESet;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected RefType1Impl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getRefType1();
-  }
+		return ColladaPackage.eINSTANCE.getRefType1();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getParam() {
-    return param;
-  }
+		return param;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setParam(String newParam) {
-    String oldParam = param;
-    param = newParam;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_TYPE1__PARAM, oldParam, param));
-  }
+		String oldParam = param;
+		param = newParam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_TYPE1__PARAM, oldParam, param));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public short getValue() {
-    return value;
-  }
+		return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setValue(short newValue) {
-    short oldValue = value;
-    value = newValue;
-    boolean oldValueESet = valueESet;
-    valueESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_TYPE1__VALUE, oldValue, value, !oldValueESet));
-  }
+		short oldValue = value;
+		value = newValue;
+		boolean oldValueESet = valueESet;
+		valueESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_TYPE1__VALUE, oldValue, value, !oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetValue() {
-    short oldValue = value;
-    boolean oldValueESet = valueESet;
-    value = VALUE_EDEFAULT;
-    valueESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.REF_TYPE1__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
-  }
+		short oldValue = value;
+		boolean oldValueESet = valueESet;
+		value = VALUE_EDEFAULT;
+		valueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.REF_TYPE1__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetValue() {
-    return valueESet;
-  }
+		return valueESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_TYPE1__PARAM:
-        return getParam();
-      case ColladaPackage.REF_TYPE1__VALUE:
-        return getValue();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_TYPE1__PARAM:
+				return getParam();
+			case ColladaPackage.REF_TYPE1__VALUE:
+				return getValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_TYPE1__PARAM:
-        setParam((String)newValue);
-        return;
-      case ColladaPackage.REF_TYPE1__VALUE:
-        setValue((Short)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_TYPE1__PARAM:
+				setParam((String)newValue);
+				return;
+			case ColladaPackage.REF_TYPE1__VALUE:
+				setValue((Short)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_TYPE1__PARAM:
-        setParam(PARAM_EDEFAULT);
-        return;
-      case ColladaPackage.REF_TYPE1__VALUE:
-        unsetValue();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_TYPE1__PARAM:
+				setParam(PARAM_EDEFAULT);
+				return;
+			case ColladaPackage.REF_TYPE1__VALUE:
+				unsetValue();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_TYPE1__PARAM:
-        return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
-      case ColladaPackage.REF_TYPE1__VALUE:
-        return isSetValue();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_TYPE1__PARAM:
+				return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
+			case ColladaPackage.REF_TYPE1__VALUE:
+				return isSetValue();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (param: ");
-    result.append(param);
-    result.append(", value: ");
-    if (valueESet) result.append(value); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (param: ");
+		result.append(param);
+		result.append(", value: ");
+		if (valueESet) result.append(value); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //RefType1Impl

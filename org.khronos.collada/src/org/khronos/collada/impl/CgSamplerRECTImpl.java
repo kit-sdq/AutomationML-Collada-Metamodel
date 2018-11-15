@@ -15,29 +15,27 @@ import org.khronos.collada.ColladaPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cg Sampler RECT</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class CgSamplerRECTImpl extends FxSamplerRECTCommonImpl implements CgSamplerRECT {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CgSamplerRECTImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getCgSamplerRECT();
-  }
+		return ColladaPackage.eINSTANCE.getCgSamplerRECT();
+	}
 
 } //CgSamplerRECTImpl

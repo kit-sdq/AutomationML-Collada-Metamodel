@@ -15,29 +15,27 @@ import org.khronos.collada.ColladaPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cg Sampler2 D</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class CgSampler2DImpl extends FxSampler2DCommonImpl implements CgSampler2D {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CgSampler2DImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getCgSampler2D();
-  }
+		return ColladaPackage.eINSTANCE.getCgSampler2D();
+	}
 
 } //CgSampler2DImpl

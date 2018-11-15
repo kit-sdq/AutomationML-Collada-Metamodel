@@ -39,232 +39,223 @@ import org.khronos.collada.TechniqueCommonType2;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.TechniqueCommonType2Impl#getOrthographic <em>Orthographic</em>}</li>
  *   <li>{@link org.khronos.collada.impl.TechniqueCommonType2Impl#getPerspective <em>Perspective</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class TechniqueCommonType2Impl extends EObjectImpl implements TechniqueCommonType2 {
 	/**
-   * The cached value of the '{@link #getOrthographic() <em>Orthographic</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOrthographic() <em>Orthographic</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getOrthographic()
-   * @generated
-   * @ordered
-   */
+	 * @see #getOrthographic()
+	 * @generated
+	 * @ordered
+	 */
 	protected OrthographicType orthographic;
 
 	/**
-   * The cached value of the '{@link #getPerspective() <em>Perspective</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getPerspective() <em>Perspective</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getPerspective()
-   * @generated
-   * @ordered
-   */
+	 * @see #getPerspective()
+	 * @generated
+	 * @ordered
+	 */
 	protected PerspectiveType perspective;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TechniqueCommonType2Impl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getTechniqueCommonType2();
-  }
+		return ColladaPackage.eINSTANCE.getTechniqueCommonType2();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public OrthographicType getOrthographic() {
-    return orthographic;
-  }
+		return orthographic;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetOrthographic(OrthographicType newOrthographic, NotificationChain msgs) {
-    OrthographicType oldOrthographic = orthographic;
-    orthographic = newOrthographic;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, oldOrthographic, newOrthographic);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		OrthographicType oldOrthographic = orthographic;
+		orthographic = newOrthographic;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, oldOrthographic, newOrthographic);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setOrthographic(OrthographicType newOrthographic) {
-    if (newOrthographic != orthographic)
-    {
-      NotificationChain msgs = null;
-      if (orthographic != null)
-        msgs = ((InternalEObject)orthographic).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, null, msgs);
-      if (newOrthographic != null)
-        msgs = ((InternalEObject)newOrthographic).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, null, msgs);
-      msgs = basicSetOrthographic(newOrthographic, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, newOrthographic, newOrthographic));
-  }
+		if (newOrthographic != orthographic) {
+			NotificationChain msgs = null;
+			if (orthographic != null)
+				msgs = ((InternalEObject)orthographic).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, null, msgs);
+			if (newOrthographic != null)
+				msgs = ((InternalEObject)newOrthographic).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, null, msgs);
+			msgs = basicSetOrthographic(newOrthographic, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC, newOrthographic, newOrthographic));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PerspectiveType getPerspective() {
-    return perspective;
-  }
+		return perspective;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetPerspective(PerspectiveType newPerspective, NotificationChain msgs) {
-    PerspectiveType oldPerspective = perspective;
-    perspective = newPerspective;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, oldPerspective, newPerspective);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		PerspectiveType oldPerspective = perspective;
+		perspective = newPerspective;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, oldPerspective, newPerspective);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setPerspective(PerspectiveType newPerspective) {
-    if (newPerspective != perspective)
-    {
-      NotificationChain msgs = null;
-      if (perspective != null)
-        msgs = ((InternalEObject)perspective).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, null, msgs);
-      if (newPerspective != null)
-        msgs = ((InternalEObject)newPerspective).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, null, msgs);
-      msgs = basicSetPerspective(newPerspective, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, newPerspective, newPerspective));
-  }
+		if (newPerspective != perspective) {
+			NotificationChain msgs = null;
+			if (perspective != null)
+				msgs = ((InternalEObject)perspective).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, null, msgs);
+			if (newPerspective != null)
+				msgs = ((InternalEObject)newPerspective).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, null, msgs);
+			msgs = basicSetPerspective(newPerspective, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE, newPerspective, newPerspective));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
-        return basicSetOrthographic(null, msgs);
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
-        return basicSetPerspective(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
+				return basicSetOrthographic(null, msgs);
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
+				return basicSetPerspective(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
-        return getOrthographic();
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
-        return getPerspective();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
+				return getOrthographic();
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
+				return getPerspective();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
-        setOrthographic((OrthographicType)newValue);
-        return;
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
-        setPerspective((PerspectiveType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
+				setOrthographic((OrthographicType)newValue);
+				return;
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
+				setPerspective((PerspectiveType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
-        setOrthographic((OrthographicType)null);
-        return;
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
-        setPerspective((PerspectiveType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
+				setOrthographic((OrthographicType)null);
+				return;
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
+				setPerspective((PerspectiveType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
-        return orthographic != null;
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
-        return perspective != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__ORTHOGRAPHIC:
+				return orthographic != null;
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE2__PERSPECTIVE:
+				return perspective != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TechniqueCommonType2Impl

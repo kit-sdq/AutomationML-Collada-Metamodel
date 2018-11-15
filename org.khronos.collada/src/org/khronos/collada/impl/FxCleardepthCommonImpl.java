@@ -24,272 +24,268 @@ import org.khronos.collada.FxCleardepthCommon;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.FxCleardepthCommonImpl#getValue <em>Value</em>}</li>
  *   <li>{@link org.khronos.collada.impl.FxCleardepthCommonImpl#getIndex <em>Index</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class FxCleardepthCommonImpl extends EObjectImpl implements FxCleardepthCommon {
 	/**
-   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final double VALUE_EDEFAULT = 0.0;
 
 	/**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected double value = VALUE_EDEFAULT;
 
 	/**
-   * This is true if the Value attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Value attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean valueESet;
 
 	/**
-   * The default value of the '{@link #getIndex() <em>Index</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getIndex() <em>Index</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getIndex()
-   * @generated
-   * @ordered
-   */
+	 * @see #getIndex()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final BigInteger INDEX_EDEFAULT = new BigInteger("0");
 
 	/**
-   * The cached value of the '{@link #getIndex() <em>Index</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getIndex() <em>Index</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getIndex()
-   * @generated
-   * @ordered
-   */
+	 * @see #getIndex()
+	 * @generated
+	 * @ordered
+	 */
 	protected BigInteger index = INDEX_EDEFAULT;
 
 	/**
-   * This is true if the Index attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Index attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean indexESet;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FxCleardepthCommonImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getFxCleardepthCommon();
-  }
+		return ColladaPackage.eINSTANCE.getFxCleardepthCommon();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public double getValue() {
-    return value;
-  }
+		return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setValue(double newValue) {
-    double oldValue = value;
-    value = newValue;
-    boolean oldValueESet = valueESet;
-    valueESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE, oldValue, value, !oldValueESet));
-  }
+		double oldValue = value;
+		value = newValue;
+		boolean oldValueESet = valueESet;
+		valueESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE, oldValue, value, !oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetValue() {
-    double oldValue = value;
-    boolean oldValueESet = valueESet;
-    value = VALUE_EDEFAULT;
-    valueESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
-  }
+		double oldValue = value;
+		boolean oldValueESet = valueESet;
+		value = VALUE_EDEFAULT;
+		valueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetValue() {
-    return valueESet;
-  }
+		return valueESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public BigInteger getIndex() {
-    return index;
-  }
+		return index;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setIndex(BigInteger newIndex) {
-    BigInteger oldIndex = index;
-    index = newIndex;
-    boolean oldIndexESet = indexESet;
-    indexESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX, oldIndex, index, !oldIndexESet));
-  }
+		BigInteger oldIndex = index;
+		index = newIndex;
+		boolean oldIndexESet = indexESet;
+		indexESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX, oldIndex, index, !oldIndexESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetIndex() {
-    BigInteger oldIndex = index;
-    boolean oldIndexESet = indexESet;
-    index = INDEX_EDEFAULT;
-    indexESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX, oldIndex, INDEX_EDEFAULT, oldIndexESet));
-  }
+		BigInteger oldIndex = index;
+		boolean oldIndexESet = indexESet;
+		index = INDEX_EDEFAULT;
+		indexESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX, oldIndex, INDEX_EDEFAULT, oldIndexESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetIndex() {
-    return indexESet;
-  }
+		return indexESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
-        return getValue();
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
-        return getIndex();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
+				return getValue();
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
+				return getIndex();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
-        setValue((Double)newValue);
-        return;
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
-        setIndex((BigInteger)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
+				setValue((Double)newValue);
+				return;
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
+				setIndex((BigInteger)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
-        unsetValue();
-        return;
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
-        unsetIndex();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
+				unsetValue();
+				return;
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
+				unsetIndex();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
-        return isSetValue();
-      case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
-        return isSetIndex();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__VALUE:
+				return isSetValue();
+			case ColladaPackage.FX_CLEARDEPTH_COMMON__INDEX:
+				return isSetIndex();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (value: ");
-    if (valueESet) result.append(value); else result.append("<unset>");
-    result.append(", index: ");
-    if (indexESet) result.append(index); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (value: ");
+		if (valueESet) result.append(value); else result.append("<unset>");
+		result.append(", index: ");
+		if (indexESet) result.append(index); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //FxCleardepthCommonImpl

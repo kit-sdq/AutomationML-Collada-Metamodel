@@ -26,231 +26,222 @@ import org.khronos.collada.SrcType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.BlendFuncTypeImpl#getSrc <em>Src</em>}</li>
  *   <li>{@link org.khronos.collada.impl.BlendFuncTypeImpl#getDest <em>Dest</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class BlendFuncTypeImpl extends EObjectImpl implements BlendFuncType {
 	/**
-   * The cached value of the '{@link #getSrc() <em>Src</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSrc() <em>Src</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSrc()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSrc()
+	 * @generated
+	 * @ordered
+	 */
 	protected SrcType src;
 
 	/**
-   * The cached value of the '{@link #getDest() <em>Dest</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDest() <em>Dest</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getDest()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDest()
+	 * @generated
+	 * @ordered
+	 */
 	protected DestType dest;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected BlendFuncTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getBlendFuncType();
-  }
+		return ColladaPackage.eINSTANCE.getBlendFuncType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SrcType getSrc() {
-    return src;
-  }
+		return src;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetSrc(SrcType newSrc, NotificationChain msgs) {
-    SrcType oldSrc = src;
-    src = newSrc;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__SRC, oldSrc, newSrc);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		SrcType oldSrc = src;
+		src = newSrc;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__SRC, oldSrc, newSrc);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setSrc(SrcType newSrc) {
-    if (newSrc != src)
-    {
-      NotificationChain msgs = null;
-      if (src != null)
-        msgs = ((InternalEObject)src).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__SRC, null, msgs);
-      if (newSrc != null)
-        msgs = ((InternalEObject)newSrc).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__SRC, null, msgs);
-      msgs = basicSetSrc(newSrc, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__SRC, newSrc, newSrc));
-  }
+		if (newSrc != src) {
+			NotificationChain msgs = null;
+			if (src != null)
+				msgs = ((InternalEObject)src).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__SRC, null, msgs);
+			if (newSrc != null)
+				msgs = ((InternalEObject)newSrc).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__SRC, null, msgs);
+			msgs = basicSetSrc(newSrc, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__SRC, newSrc, newSrc));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public DestType getDest() {
-    return dest;
-  }
+		return dest;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetDest(DestType newDest, NotificationChain msgs) {
-    DestType oldDest = dest;
-    dest = newDest;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__DEST, oldDest, newDest);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		DestType oldDest = dest;
+		dest = newDest;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__DEST, oldDest, newDest);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setDest(DestType newDest) {
-    if (newDest != dest)
-    {
-      NotificationChain msgs = null;
-      if (dest != null)
-        msgs = ((InternalEObject)dest).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__DEST, null, msgs);
-      if (newDest != null)
-        msgs = ((InternalEObject)newDest).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__DEST, null, msgs);
-      msgs = basicSetDest(newDest, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__DEST, newDest, newDest));
-  }
+		if (newDest != dest) {
+			NotificationChain msgs = null;
+			if (dest != null)
+				msgs = ((InternalEObject)dest).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__DEST, null, msgs);
+			if (newDest != null)
+				msgs = ((InternalEObject)newDest).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.BLEND_FUNC_TYPE__DEST, null, msgs);
+			msgs = basicSetDest(newDest, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BLEND_FUNC_TYPE__DEST, newDest, newDest));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.BLEND_FUNC_TYPE__SRC:
-        return basicSetSrc(null, msgs);
-      case ColladaPackage.BLEND_FUNC_TYPE__DEST:
-        return basicSetDest(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.BLEND_FUNC_TYPE__SRC:
+				return basicSetSrc(null, msgs);
+			case ColladaPackage.BLEND_FUNC_TYPE__DEST:
+				return basicSetDest(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.BLEND_FUNC_TYPE__SRC:
-        return getSrc();
-      case ColladaPackage.BLEND_FUNC_TYPE__DEST:
-        return getDest();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.BLEND_FUNC_TYPE__SRC:
+				return getSrc();
+			case ColladaPackage.BLEND_FUNC_TYPE__DEST:
+				return getDest();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.BLEND_FUNC_TYPE__SRC:
-        setSrc((SrcType)newValue);
-        return;
-      case ColladaPackage.BLEND_FUNC_TYPE__DEST:
-        setDest((DestType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.BLEND_FUNC_TYPE__SRC:
+				setSrc((SrcType)newValue);
+				return;
+			case ColladaPackage.BLEND_FUNC_TYPE__DEST:
+				setDest((DestType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.BLEND_FUNC_TYPE__SRC:
-        setSrc((SrcType)null);
-        return;
-      case ColladaPackage.BLEND_FUNC_TYPE__DEST:
-        setDest((DestType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.BLEND_FUNC_TYPE__SRC:
+				setSrc((SrcType)null);
+				return;
+			case ColladaPackage.BLEND_FUNC_TYPE__DEST:
+				setDest((DestType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.BLEND_FUNC_TYPE__SRC:
-        return src != null;
-      case ColladaPackage.BLEND_FUNC_TYPE__DEST:
-        return dest != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.BLEND_FUNC_TYPE__SRC:
+				return src != null;
+			case ColladaPackage.BLEND_FUNC_TYPE__DEST:
+				return dest != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //BlendFuncTypeImpl

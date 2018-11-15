@@ -22,184 +22,180 @@ import org.khronos.collada.FxOpaqueEnum;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.CommonTransparentTypeImpl#getOpaque <em>Opaque</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class CommonTransparentTypeImpl extends CommonColorOrTextureTypeImpl implements CommonTransparentType {
 	/**
-   * The default value of the '{@link #getOpaque() <em>Opaque</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getOpaque() <em>Opaque</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getOpaque()
-   * @generated
-   * @ordered
-   */
+	 * @see #getOpaque()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FxOpaqueEnum OPAQUE_EDEFAULT = FxOpaqueEnum.AONE;
 
 	/**
-   * The cached value of the '{@link #getOpaque() <em>Opaque</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getOpaque() <em>Opaque</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getOpaque()
-   * @generated
-   * @ordered
-   */
+	 * @see #getOpaque()
+	 * @generated
+	 * @ordered
+	 */
 	protected FxOpaqueEnum opaque = OPAQUE_EDEFAULT;
 
 	/**
-   * This is true if the Opaque attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Opaque attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean opaqueESet;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CommonTransparentTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getCommonTransparentType();
-  }
+		return ColladaPackage.eINSTANCE.getCommonTransparentType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FxOpaqueEnum getOpaque() {
-    return opaque;
-  }
+		return opaque;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setOpaque(FxOpaqueEnum newOpaque) {
-    FxOpaqueEnum oldOpaque = opaque;
-    opaque = newOpaque == null ? OPAQUE_EDEFAULT : newOpaque;
-    boolean oldOpaqueESet = opaqueESet;
-    opaqueESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE, oldOpaque, opaque, !oldOpaqueESet));
-  }
+		FxOpaqueEnum oldOpaque = opaque;
+		opaque = newOpaque == null ? OPAQUE_EDEFAULT : newOpaque;
+		boolean oldOpaqueESet = opaqueESet;
+		opaqueESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE, oldOpaque, opaque, !oldOpaqueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetOpaque() {
-    FxOpaqueEnum oldOpaque = opaque;
-    boolean oldOpaqueESet = opaqueESet;
-    opaque = OPAQUE_EDEFAULT;
-    opaqueESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE, oldOpaque, OPAQUE_EDEFAULT, oldOpaqueESet));
-  }
+		FxOpaqueEnum oldOpaque = opaque;
+		boolean oldOpaqueESet = opaqueESet;
+		opaque = OPAQUE_EDEFAULT;
+		opaqueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE, oldOpaque, OPAQUE_EDEFAULT, oldOpaqueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetOpaque() {
-    return opaqueESet;
-  }
+		return opaqueESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
-        return getOpaque();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
+				return getOpaque();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
-        setOpaque((FxOpaqueEnum)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
+				setOpaque((FxOpaqueEnum)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
-        unsetOpaque();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
+				unsetOpaque();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
-        return isSetOpaque();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.COMMON_TRANSPARENT_TYPE__OPAQUE:
+				return isSetOpaque();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (opaque: ");
-    if (opaqueESet) result.append(opaque); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (opaque: ");
+		if (opaqueESet) result.append(opaque); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //CommonTransparentTypeImpl

@@ -19,10 +19,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.FxSurfaceInitPlanarCommon#getAll <em>All</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.khronos.collada.ColladaPackage#getFxSurfaceInitPlanarCommon()
  * @model extendedMetaData="name='fx_surface_init_planar_common' kind='elementOnly'"
@@ -30,29 +30,29 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface FxSurfaceInitPlanarCommon extends EObject {
 	/**
-   * Returns the value of the '<em><b>All</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>All</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * Init the entire surface with one compound image such as DDS
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>All</em>' containment reference.
-   * @see #setAll(AllType1)
-   * @see org.khronos.collada.ColladaPackage#getFxSurfaceInitPlanarCommon_All()
-   * @model containment="true"
-   *        extendedMetaData="kind='element' name='all' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * Init the entire surface with one compound image such as DDS
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>All</em>' containment reference.
+	 * @see #setAll(AllType1)
+	 * @see org.khronos.collada.ColladaPackage#getFxSurfaceInitPlanarCommon_All()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='all' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	AllType1 getAll();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.FxSurfaceInitPlanarCommon#getAll <em>All</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.FxSurfaceInitPlanarCommon#getAll <em>All</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>All</em>' containment reference.
-   * @see #getAll()
-   * @generated
-   */
+	 * @param value the new value of the '<em>All</em>' containment reference.
+	 * @see #getAll()
+	 * @generated
+	 */
 	void setAll(AllType1 value);
 
 } // FxSurfaceInitPlanarCommon

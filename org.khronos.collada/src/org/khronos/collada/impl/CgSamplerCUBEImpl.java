@@ -15,29 +15,27 @@ import org.khronos.collada.ColladaPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cg Sampler CUBE</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class CgSamplerCUBEImpl extends FxSamplerCUBECommonImpl implements CgSamplerCUBE {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CgSamplerCUBEImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getCgSamplerCUBE();
-  }
+		return ColladaPackage.eINSTANCE.getCgSamplerCUBE();
+	}
 
 } //CgSamplerCUBEImpl

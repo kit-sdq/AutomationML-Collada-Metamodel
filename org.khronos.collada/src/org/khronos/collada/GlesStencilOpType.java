@@ -23,304 +23,304 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum GlesStencilOpType implements Enumerator {
 	/**
-   * The '<em><b>KEEP</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>KEEP</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #KEEP_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #KEEP_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	KEEP(0, "KEEP", "KEEP"),
 
 	/**
-   * The '<em><b>ZERO</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>ZERO</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #ZERO_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #ZERO_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	ZERO(1, "ZERO", "ZERO"),
 
 	/**
-   * The '<em><b>REPLACE</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>REPLACE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #REPLACE_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #REPLACE_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	REPLACE(2, "REPLACE", "REPLACE"),
 
 	/**
-   * The '<em><b>INCR</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>INCR</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #INCR_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #INCR_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	INCR(3, "INCR", "INCR"),
 
 	/**
-   * The '<em><b>DECR</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>DECR</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #DECR_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #DECR_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	DECR(4, "DECR", "DECR"),
 
 	/**
-   * The '<em><b>INVERT</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>INVERT</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #INVERT_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #INVERT_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	INVERT(5, "INVERT", "INVERT");
 
 	/**
-   * The '<em><b>KEEP</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>KEEP</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>KEEP</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #KEEP
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #KEEP
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int KEEP_VALUE = 0;
 
 	/**
-   * The '<em><b>ZERO</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>ZERO</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>ZERO</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #ZERO
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #ZERO
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int ZERO_VALUE = 1;
 
 	/**
-   * The '<em><b>REPLACE</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>REPLACE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>REPLACE</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #REPLACE
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #REPLACE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int REPLACE_VALUE = 2;
 
 	/**
-   * The '<em><b>INCR</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>INCR</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>INCR</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #INCR
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #INCR
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int INCR_VALUE = 3;
 
 	/**
-   * The '<em><b>DECR</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>DECR</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>DECR</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #DECR
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #DECR
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int DECR_VALUE = 4;
 
 	/**
-   * The '<em><b>INVERT</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>INVERT</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>INVERT</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #INVERT
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #INVERT
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int INVERT_VALUE = 5;
 
 	/**
-   * An array of all the '<em><b>Gles Stencil Op Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Gles Stencil Op Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private static final GlesStencilOpType[] VALUES_ARRAY =
-		new GlesStencilOpType[]
-    {
-      KEEP,
-      ZERO,
-      REPLACE,
-      INCR,
-      DECR,
-      INVERT,
-    };
+		new GlesStencilOpType[] {
+			KEEP,
+			ZERO,
+			REPLACE,
+			INCR,
+			DECR,
+			INVERT,
+		};
 
 	/**
-   * A public read-only list of all the '<em><b>Gles Stencil Op Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Gles Stencil Op Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static final List<GlesStencilOpType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-   * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified literal value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlesStencilOpType get(String literal) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      GlesStencilOpType result = VALUES_ARRAY[i];
-      if (result.toString().equals(literal))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			GlesStencilOpType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified name.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlesStencilOpType getByName(String name) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      GlesStencilOpType result = VALUES_ARRAY[i];
-      if (result.getName().equals(name))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			GlesStencilOpType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified integer value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Gles Stencil Op Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static GlesStencilOpType get(int value) {
-    switch (value)
-    {
-      case KEEP_VALUE: return KEEP;
-      case ZERO_VALUE: return ZERO;
-      case REPLACE_VALUE: return REPLACE;
-      case INCR_VALUE: return INCR;
-      case DECR_VALUE: return DECR;
-      case INVERT_VALUE: return INVERT;
-    }
-    return null;
-  }
+		switch (value) {
+			case KEEP_VALUE: return KEEP;
+			case ZERO_VALUE: return ZERO;
+			case REPLACE_VALUE: return REPLACE;
+			case INCR_VALUE: return INCR;
+			case DECR_VALUE: return DECR;
+			case INVERT_VALUE: return INVERT;
+		}
+		return null;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final int value;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String name;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String literal;
 
 	/**
-   * Only this class can construct instances.
-   * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private GlesStencilOpType(int value, String name, String literal) {
-    this.value = value;
-    this.name = name;
-    this.literal = literal;
-  }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public int getValue() {
-    return value;
-  }
+	  return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getName() {
-    return name;
-  }
+	  return name;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getLiteral() {
-    return literal;
-  }
+	  return literal;
+	}
 
 	/**
-   * Returns the literal value of the enumerator, which is its string representation.
-   * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    return literal;
-  }
+		return literal;
+	}
 	
 } //GlesStencilOpType

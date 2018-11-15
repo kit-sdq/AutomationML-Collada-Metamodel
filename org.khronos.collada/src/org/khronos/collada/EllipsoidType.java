@@ -17,10 +17,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.EllipsoidType#getSize <em>Size</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.khronos.collada.ColladaPackage#getEllipsoidType()
  * @model extendedMetaData="name='ellipsoid_._type' kind='elementOnly'"
@@ -28,30 +28,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface EllipsoidType extends EObject {
 	/**
-   * Returns the value of the '<em><b>Size</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Size</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @return the value of the '<em>Size</em>' attribute.
-   * @see #setSize(List)
-   * @see org.khronos.collada.ColladaPackage#getEllipsoidType_Size()
-   * @model dataType="org.khronos.collada.Float3" required="true" many="false"
-   *        extendedMetaData="kind='element' name='size' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * @return the value of the '<em>Size</em>' attribute.
+	 * @see #setSize(List)
+	 * @see org.khronos.collada.ColladaPackage#getEllipsoidType_Size()
+	 * @model dataType="org.khronos.collada.Float3" required="true" many="false"
+	 *        extendedMetaData="kind='element' name='size' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	List<Double> getSize();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.EllipsoidType#getSize <em>Size</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.EllipsoidType#getSize <em>Size</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Size</em>' attribute.
-   * @see #getSize()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Size</em>' attribute.
+	 * @see #getSize()
+	 * @generated
+	 */
 	void setSize(List<Double> value);
 
 } // EllipsoidType

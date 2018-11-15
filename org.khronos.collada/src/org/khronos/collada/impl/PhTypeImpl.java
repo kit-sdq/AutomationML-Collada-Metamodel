@@ -31,188 +31,183 @@ import org.khronos.collada.PhType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.PhTypeImpl#getP <em>P</em>}</li>
  *   <li>{@link org.khronos.collada.impl.PhTypeImpl#getH <em>H</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class PhTypeImpl extends EObjectImpl implements PhType {
 	/**
-   * The default value of the '{@link #getP() <em>P</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getP() <em>P</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getP()
-   * @generated
-   * @ordered
-   */
+	 * @see #getP()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final List<BigInteger> P_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getP() <em>P</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getP() <em>P</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getP()
-   * @generated
-   * @ordered
-   */
+	 * @see #getP()
+	 * @generated
+	 * @ordered
+	 */
 	protected List<BigInteger> p = P_EDEFAULT;
 
 	/**
-   * The cached value of the '{@link #getH() <em>H</em>}' attribute list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getH() <em>H</em>}' attribute list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getH()
-   * @generated
-   * @ordered
-   */
+	 * @see #getH()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<List> h;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PhTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getPhType();
-  }
+		return ColladaPackage.eINSTANCE.getPhType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public List<BigInteger> getP() {
-    return p;
-  }
+		return p;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setP(List<BigInteger> newP) {
-    List<BigInteger> oldP = p;
-    p = newP;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.PH_TYPE__P, oldP, p));
-  }
+		List<BigInteger> oldP = p;
+		p = newP;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.PH_TYPE__P, oldP, p));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<List> getH() {
-    if (h == null)
-    {
-      h = new EDataTypeEList<List>(List.class, this, ColladaPackage.PH_TYPE__H);
-    }
-    return h;
-  }
+		if (h == null) {
+			h = new EDataTypeEList<List>(List.class, this, ColladaPackage.PH_TYPE__H);
+		}
+		return h;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.PH_TYPE__P:
-        return getP();
-      case ColladaPackage.PH_TYPE__H:
-        return getH();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.PH_TYPE__P:
+				return getP();
+			case ColladaPackage.PH_TYPE__H:
+				return getH();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.PH_TYPE__P:
-        setP((List<BigInteger>)newValue);
-        return;
-      case ColladaPackage.PH_TYPE__H:
-        getH().clear();
-        getH().addAll((Collection<? extends List>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.PH_TYPE__P:
+				setP((List<BigInteger>)newValue);
+				return;
+			case ColladaPackage.PH_TYPE__H:
+				getH().clear();
+				getH().addAll((Collection<? extends List>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.PH_TYPE__P:
-        setP(P_EDEFAULT);
-        return;
-      case ColladaPackage.PH_TYPE__H:
-        getH().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.PH_TYPE__P:
+				setP(P_EDEFAULT);
+				return;
+			case ColladaPackage.PH_TYPE__H:
+				getH().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.PH_TYPE__P:
-        return P_EDEFAULT == null ? p != null : !P_EDEFAULT.equals(p);
-      case ColladaPackage.PH_TYPE__H:
-        return h != null && !h.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.PH_TYPE__P:
+				return P_EDEFAULT == null ? p != null : !P_EDEFAULT.equals(p);
+			case ColladaPackage.PH_TYPE__H:
+				return h != null && !h.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (p: ");
-    result.append(p);
-    result.append(", h: ");
-    result.append(h);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (p: ");
+		result.append(p);
+		result.append(", h: ");
+		result.append(h);
+		result.append(')');
+		return result.toString();
+	}
 
 } //PhTypeImpl

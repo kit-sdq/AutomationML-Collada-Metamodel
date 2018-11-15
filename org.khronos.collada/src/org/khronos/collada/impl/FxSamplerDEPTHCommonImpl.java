@@ -34,6 +34,7 @@ import org.khronos.collada.FxSamplerWrapCommon;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.FxSamplerDEPTHCommonImpl#getSource <em>Source</em>}</li>
  *   <li>{@link org.khronos.collada.impl.FxSamplerDEPTHCommonImpl#getWrapS <em>Wrap S</em>}</li>
@@ -42,545 +43,538 @@ import org.khronos.collada.FxSamplerWrapCommon;
  *   <li>{@link org.khronos.collada.impl.FxSamplerDEPTHCommonImpl#getMagfilter <em>Magfilter</em>}</li>
  *   <li>{@link org.khronos.collada.impl.FxSamplerDEPTHCommonImpl#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class FxSamplerDEPTHCommonImpl extends EObjectImpl implements FxSamplerDEPTHCommon {
 	/**
-   * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSource()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSource()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String SOURCE_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getSource() <em>Source</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSource() <em>Source</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSource()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSource()
+	 * @generated
+	 * @ordered
+	 */
 	protected String source = SOURCE_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getWrapS() <em>Wrap S</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getWrapS() <em>Wrap S</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWrapS()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWrapS()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FxSamplerWrapCommon WRAP_S_EDEFAULT = FxSamplerWrapCommon.WRAP;
 
 	/**
-   * The cached value of the '{@link #getWrapS() <em>Wrap S</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getWrapS() <em>Wrap S</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWrapS()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWrapS()
+	 * @generated
+	 * @ordered
+	 */
 	protected FxSamplerWrapCommon wrapS = WRAP_S_EDEFAULT;
 
 	/**
-   * This is true if the Wrap S attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Wrap S attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean wrapSESet;
 
 	/**
-   * The default value of the '{@link #getWrapT() <em>Wrap T</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getWrapT() <em>Wrap T</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWrapT()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWrapT()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FxSamplerWrapCommon WRAP_T_EDEFAULT = FxSamplerWrapCommon.WRAP;
 
 	/**
-   * The cached value of the '{@link #getWrapT() <em>Wrap T</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getWrapT() <em>Wrap T</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getWrapT()
-   * @generated
-   * @ordered
-   */
+	 * @see #getWrapT()
+	 * @generated
+	 * @ordered
+	 */
 	protected FxSamplerWrapCommon wrapT = WRAP_T_EDEFAULT;
 
 	/**
-   * This is true if the Wrap T attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Wrap T attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean wrapTESet;
 
 	/**
-   * The default value of the '{@link #getMinfilter() <em>Minfilter</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMinfilter() <em>Minfilter</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getMinfilter()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMinfilter()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FxSamplerFilterCommon MINFILTER_EDEFAULT = FxSamplerFilterCommon.NONE;
 
 	/**
-   * The cached value of the '{@link #getMinfilter() <em>Minfilter</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMinfilter() <em>Minfilter</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getMinfilter()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMinfilter()
+	 * @generated
+	 * @ordered
+	 */
 	protected FxSamplerFilterCommon minfilter = MINFILTER_EDEFAULT;
 
 	/**
-   * This is true if the Minfilter attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Minfilter attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean minfilterESet;
 
 	/**
-   * The default value of the '{@link #getMagfilter() <em>Magfilter</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getMagfilter() <em>Magfilter</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getMagfilter()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMagfilter()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final FxSamplerFilterCommon MAGFILTER_EDEFAULT = FxSamplerFilterCommon.NONE;
 
 	/**
-   * The cached value of the '{@link #getMagfilter() <em>Magfilter</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getMagfilter() <em>Magfilter</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getMagfilter()
-   * @generated
-   * @ordered
-   */
+	 * @see #getMagfilter()
+	 * @generated
+	 * @ordered
+	 */
 	protected FxSamplerFilterCommon magfilter = MAGFILTER_EDEFAULT;
 
 	/**
-   * This is true if the Magfilter attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Magfilter attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean magfilterESet;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FxSamplerDEPTHCommonImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getFxSamplerDEPTHCommon();
-  }
+		return ColladaPackage.eINSTANCE.getFxSamplerDEPTHCommon();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getSource() {
-    return source;
-  }
+		return source;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setSource(String newSource) {
-    String oldSource = source;
-    source = newSource;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE, oldSource, source));
-  }
+		String oldSource = source;
+		source = newSource;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE, oldSource, source));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FxSamplerWrapCommon getWrapS() {
-    return wrapS;
-  }
+		return wrapS;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setWrapS(FxSamplerWrapCommon newWrapS) {
-    FxSamplerWrapCommon oldWrapS = wrapS;
-    wrapS = newWrapS == null ? WRAP_S_EDEFAULT : newWrapS;
-    boolean oldWrapSESet = wrapSESet;
-    wrapSESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S, oldWrapS, wrapS, !oldWrapSESet));
-  }
+		FxSamplerWrapCommon oldWrapS = wrapS;
+		wrapS = newWrapS == null ? WRAP_S_EDEFAULT : newWrapS;
+		boolean oldWrapSESet = wrapSESet;
+		wrapSESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S, oldWrapS, wrapS, !oldWrapSESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetWrapS() {
-    FxSamplerWrapCommon oldWrapS = wrapS;
-    boolean oldWrapSESet = wrapSESet;
-    wrapS = WRAP_S_EDEFAULT;
-    wrapSESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S, oldWrapS, WRAP_S_EDEFAULT, oldWrapSESet));
-  }
+		FxSamplerWrapCommon oldWrapS = wrapS;
+		boolean oldWrapSESet = wrapSESet;
+		wrapS = WRAP_S_EDEFAULT;
+		wrapSESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S, oldWrapS, WRAP_S_EDEFAULT, oldWrapSESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetWrapS() {
-    return wrapSESet;
-  }
+		return wrapSESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FxSamplerWrapCommon getWrapT() {
-    return wrapT;
-  }
+		return wrapT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setWrapT(FxSamplerWrapCommon newWrapT) {
-    FxSamplerWrapCommon oldWrapT = wrapT;
-    wrapT = newWrapT == null ? WRAP_T_EDEFAULT : newWrapT;
-    boolean oldWrapTESet = wrapTESet;
-    wrapTESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T, oldWrapT, wrapT, !oldWrapTESet));
-  }
+		FxSamplerWrapCommon oldWrapT = wrapT;
+		wrapT = newWrapT == null ? WRAP_T_EDEFAULT : newWrapT;
+		boolean oldWrapTESet = wrapTESet;
+		wrapTESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T, oldWrapT, wrapT, !oldWrapTESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetWrapT() {
-    FxSamplerWrapCommon oldWrapT = wrapT;
-    boolean oldWrapTESet = wrapTESet;
-    wrapT = WRAP_T_EDEFAULT;
-    wrapTESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T, oldWrapT, WRAP_T_EDEFAULT, oldWrapTESet));
-  }
+		FxSamplerWrapCommon oldWrapT = wrapT;
+		boolean oldWrapTESet = wrapTESet;
+		wrapT = WRAP_T_EDEFAULT;
+		wrapTESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T, oldWrapT, WRAP_T_EDEFAULT, oldWrapTESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetWrapT() {
-    return wrapTESet;
-  }
+		return wrapTESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FxSamplerFilterCommon getMinfilter() {
-    return minfilter;
-  }
+		return minfilter;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setMinfilter(FxSamplerFilterCommon newMinfilter) {
-    FxSamplerFilterCommon oldMinfilter = minfilter;
-    minfilter = newMinfilter == null ? MINFILTER_EDEFAULT : newMinfilter;
-    boolean oldMinfilterESet = minfilterESet;
-    minfilterESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER, oldMinfilter, minfilter, !oldMinfilterESet));
-  }
+		FxSamplerFilterCommon oldMinfilter = minfilter;
+		minfilter = newMinfilter == null ? MINFILTER_EDEFAULT : newMinfilter;
+		boolean oldMinfilterESet = minfilterESet;
+		minfilterESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER, oldMinfilter, minfilter, !oldMinfilterESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetMinfilter() {
-    FxSamplerFilterCommon oldMinfilter = minfilter;
-    boolean oldMinfilterESet = minfilterESet;
-    minfilter = MINFILTER_EDEFAULT;
-    minfilterESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER, oldMinfilter, MINFILTER_EDEFAULT, oldMinfilterESet));
-  }
+		FxSamplerFilterCommon oldMinfilter = minfilter;
+		boolean oldMinfilterESet = minfilterESet;
+		minfilter = MINFILTER_EDEFAULT;
+		minfilterESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER, oldMinfilter, MINFILTER_EDEFAULT, oldMinfilterESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetMinfilter() {
-    return minfilterESet;
-  }
+		return minfilterESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FxSamplerFilterCommon getMagfilter() {
-    return magfilter;
-  }
+		return magfilter;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setMagfilter(FxSamplerFilterCommon newMagfilter) {
-    FxSamplerFilterCommon oldMagfilter = magfilter;
-    magfilter = newMagfilter == null ? MAGFILTER_EDEFAULT : newMagfilter;
-    boolean oldMagfilterESet = magfilterESet;
-    magfilterESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER, oldMagfilter, magfilter, !oldMagfilterESet));
-  }
+		FxSamplerFilterCommon oldMagfilter = magfilter;
+		magfilter = newMagfilter == null ? MAGFILTER_EDEFAULT : newMagfilter;
+		boolean oldMagfilterESet = magfilterESet;
+		magfilterESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER, oldMagfilter, magfilter, !oldMagfilterESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetMagfilter() {
-    FxSamplerFilterCommon oldMagfilter = magfilter;
-    boolean oldMagfilterESet = magfilterESet;
-    magfilter = MAGFILTER_EDEFAULT;
-    magfilterESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER, oldMagfilter, MAGFILTER_EDEFAULT, oldMagfilterESet));
-  }
+		FxSamplerFilterCommon oldMagfilter = magfilter;
+		boolean oldMagfilterESet = magfilterESet;
+		magfilter = MAGFILTER_EDEFAULT;
+		magfilterESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER, oldMagfilter, MAGFILTER_EDEFAULT, oldMagfilterESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetMagfilter() {
-    return magfilterESet;
-  }
+		return magfilterESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
-        return getSource();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
-        return getWrapS();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
-        return getWrapT();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
-        return getMinfilter();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
-        return getMagfilter();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
-        return getExtra();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
+				return getSource();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
+				return getWrapS();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
+				return getWrapT();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
+				return getMinfilter();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
+				return getMagfilter();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
+				return getExtra();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
-        setSource((String)newValue);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
-        setWrapS((FxSamplerWrapCommon)newValue);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
-        setWrapT((FxSamplerWrapCommon)newValue);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
-        setMinfilter((FxSamplerFilterCommon)newValue);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
-        setMagfilter((FxSamplerFilterCommon)newValue);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
+				setSource((String)newValue);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
+				setWrapS((FxSamplerWrapCommon)newValue);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
+				setWrapT((FxSamplerWrapCommon)newValue);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
+				setMinfilter((FxSamplerFilterCommon)newValue);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
+				setMagfilter((FxSamplerFilterCommon)newValue);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
-        setSource(SOURCE_EDEFAULT);
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
-        unsetWrapS();
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
-        unsetWrapT();
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
-        unsetMinfilter();
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
-        unsetMagfilter();
-        return;
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
-        getExtra().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
+				setSource(SOURCE_EDEFAULT);
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
+				unsetWrapS();
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
+				unsetWrapT();
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
+				unsetMinfilter();
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
+				unsetMagfilter();
+				return;
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
+				getExtra().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
-        return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
-        return isSetWrapS();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
-        return isSetWrapT();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
-        return isSetMinfilter();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
-        return isSetMagfilter();
-      case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
-        return extra != null && !extra.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__SOURCE:
+				return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_S:
+				return isSetWrapS();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__WRAP_T:
+				return isSetWrapT();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MINFILTER:
+				return isSetMinfilter();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__MAGFILTER:
+				return isSetMagfilter();
+			case ColladaPackage.FX_SAMPLER_DEPTH_COMMON__EXTRA:
+				return extra != null && !extra.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (source: ");
-    result.append(source);
-    result.append(", wrapS: ");
-    if (wrapSESet) result.append(wrapS); else result.append("<unset>");
-    result.append(", wrapT: ");
-    if (wrapTESet) result.append(wrapT); else result.append("<unset>");
-    result.append(", minfilter: ");
-    if (minfilterESet) result.append(minfilter); else result.append("<unset>");
-    result.append(", magfilter: ");
-    if (magfilterESet) result.append(magfilter); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (source: ");
+		result.append(source);
+		result.append(", wrapS: ");
+		if (wrapSESet) result.append(wrapS); else result.append("<unset>");
+		result.append(", wrapT: ");
+		if (wrapTESet) result.append(wrapT); else result.append("<unset>");
+		result.append(", minfilter: ");
+		if (minfilterESet) result.append(minfilter); else result.append("<unset>");
+		result.append(", magfilter: ");
+		if (magfilterESet) result.append(magfilter); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //FxSamplerDEPTHCommonImpl

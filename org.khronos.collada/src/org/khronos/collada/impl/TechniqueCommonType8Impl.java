@@ -25,163 +25,156 @@ import org.khronos.collada.TechniqueCommonType8;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.TechniqueCommonType8Impl#getAccessor <em>Accessor</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class TechniqueCommonType8Impl extends EObjectImpl implements TechniqueCommonType8 {
 	/**
-   * The cached value of the '{@link #getAccessor() <em>Accessor</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAccessor() <em>Accessor</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getAccessor()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAccessor()
+	 * @generated
+	 * @ordered
+	 */
 	protected AccessorType accessor;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected TechniqueCommonType8Impl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getTechniqueCommonType8();
-  }
+		return ColladaPackage.eINSTANCE.getTechniqueCommonType8();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AccessorType getAccessor() {
-    return accessor;
-  }
+		return accessor;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetAccessor(AccessorType newAccessor, NotificationChain msgs) {
-    AccessorType oldAccessor = accessor;
-    accessor = newAccessor;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, oldAccessor, newAccessor);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		AccessorType oldAccessor = accessor;
+		accessor = newAccessor;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, oldAccessor, newAccessor);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setAccessor(AccessorType newAccessor) {
-    if (newAccessor != accessor)
-    {
-      NotificationChain msgs = null;
-      if (accessor != null)
-        msgs = ((InternalEObject)accessor).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, null, msgs);
-      if (newAccessor != null)
-        msgs = ((InternalEObject)newAccessor).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, null, msgs);
-      msgs = basicSetAccessor(newAccessor, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, newAccessor, newAccessor));
-  }
+		if (newAccessor != accessor) {
+			NotificationChain msgs = null;
+			if (accessor != null)
+				msgs = ((InternalEObject)accessor).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, null, msgs);
+			if (newAccessor != null)
+				msgs = ((InternalEObject)newAccessor).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, null, msgs);
+			msgs = basicSetAccessor(newAccessor, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR, newAccessor, newAccessor));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
-        return basicSetAccessor(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
+				return basicSetAccessor(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
-        return getAccessor();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
+				return getAccessor();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
-        setAccessor((AccessorType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
+				setAccessor((AccessorType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
-        setAccessor((AccessorType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
+				setAccessor((AccessorType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
-        return accessor != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.TECHNIQUE_COMMON_TYPE8__ACCESSOR:
+				return accessor != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TechniqueCommonType8Impl

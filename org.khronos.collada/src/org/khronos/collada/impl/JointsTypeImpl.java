@@ -31,170 +31,163 @@ import org.khronos.collada.JointsType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.JointsTypeImpl#getInput <em>Input</em>}</li>
  *   <li>{@link org.khronos.collada.impl.JointsTypeImpl#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class JointsTypeImpl extends EObjectImpl implements JointsType {
 	/**
-   * The cached value of the '{@link #getInput() <em>Input</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInput() <em>Input</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getInput()
-   * @generated
-   * @ordered
-   */
+	 * @see #getInput()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<InputLocal> input;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected JointsTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getJointsType();
-  }
+		return ColladaPackage.eINSTANCE.getJointsType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<InputLocal> getInput() {
-    if (input == null)
-    {
-      input = new EObjectContainmentEList<InputLocal>(InputLocal.class, this, ColladaPackage.JOINTS_TYPE__INPUT);
-    }
-    return input;
-  }
+		if (input == null) {
+			input = new EObjectContainmentEList<InputLocal>(InputLocal.class, this, ColladaPackage.JOINTS_TYPE__INPUT);
+		}
+		return input;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.JOINTS_TYPE__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.JOINTS_TYPE__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.JOINTS_TYPE__INPUT:
-        return ((InternalEList<?>)getInput()).basicRemove(otherEnd, msgs);
-      case ColladaPackage.JOINTS_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.JOINTS_TYPE__INPUT:
+				return ((InternalEList<?>)getInput()).basicRemove(otherEnd, msgs);
+			case ColladaPackage.JOINTS_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.JOINTS_TYPE__INPUT:
-        return getInput();
-      case ColladaPackage.JOINTS_TYPE__EXTRA:
-        return getExtra();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.JOINTS_TYPE__INPUT:
+				return getInput();
+			case ColladaPackage.JOINTS_TYPE__EXTRA:
+				return getExtra();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.JOINTS_TYPE__INPUT:
-        getInput().clear();
-        getInput().addAll((Collection<? extends InputLocal>)newValue);
-        return;
-      case ColladaPackage.JOINTS_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.JOINTS_TYPE__INPUT:
+				getInput().clear();
+				getInput().addAll((Collection<? extends InputLocal>)newValue);
+				return;
+			case ColladaPackage.JOINTS_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.JOINTS_TYPE__INPUT:
-        getInput().clear();
-        return;
-      case ColladaPackage.JOINTS_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.JOINTS_TYPE__INPUT:
+				getInput().clear();
+				return;
+			case ColladaPackage.JOINTS_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.JOINTS_TYPE__INPUT:
-        return input != null && !input.isEmpty();
-      case ColladaPackage.JOINTS_TYPE__EXTRA:
-        return extra != null && !extra.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.JOINTS_TYPE__INPUT:
+				return input != null && !input.isEmpty();
+			case ColladaPackage.JOINTS_TYPE__EXTRA:
+				return extra != null && !extra.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //JointsTypeImpl

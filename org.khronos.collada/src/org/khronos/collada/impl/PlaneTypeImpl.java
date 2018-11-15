@@ -33,201 +33,195 @@ import org.khronos.collada.PlaneType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.PlaneTypeImpl#getEquation <em>Equation</em>}</li>
  *   <li>{@link org.khronos.collada.impl.PlaneTypeImpl#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class PlaneTypeImpl extends EObjectImpl implements PlaneType {
 	/**
-   * The default value of the '{@link #getEquation() <em>Equation</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getEquation() <em>Equation</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getEquation()
-   * @generated
-   * @ordered
-   */
+	 * @see #getEquation()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final List<Double> EQUATION_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getEquation() <em>Equation</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getEquation() <em>Equation</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getEquation()
-   * @generated
-   * @ordered
-   */
+	 * @see #getEquation()
+	 * @generated
+	 * @ordered
+	 */
 	protected List<Double> equation = EQUATION_EDEFAULT;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PlaneTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getPlaneType();
-  }
+		return ColladaPackage.eINSTANCE.getPlaneType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public List<Double> getEquation() {
-    return equation;
-  }
+		return equation;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setEquation(List<Double> newEquation) {
-    List<Double> oldEquation = equation;
-    equation = newEquation;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.PLANE_TYPE__EQUATION, oldEquation, equation));
-  }
+		List<Double> oldEquation = equation;
+		equation = newEquation;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.PLANE_TYPE__EQUATION, oldEquation, equation));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.PLANE_TYPE__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.PLANE_TYPE__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.PLANE_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.PLANE_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.PLANE_TYPE__EQUATION:
-        return getEquation();
-      case ColladaPackage.PLANE_TYPE__EXTRA:
-        return getExtra();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.PLANE_TYPE__EQUATION:
+				return getEquation();
+			case ColladaPackage.PLANE_TYPE__EXTRA:
+				return getExtra();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.PLANE_TYPE__EQUATION:
-        setEquation((List<Double>)newValue);
-        return;
-      case ColladaPackage.PLANE_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.PLANE_TYPE__EQUATION:
+				setEquation((List<Double>)newValue);
+				return;
+			case ColladaPackage.PLANE_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.PLANE_TYPE__EQUATION:
-        setEquation(EQUATION_EDEFAULT);
-        return;
-      case ColladaPackage.PLANE_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.PLANE_TYPE__EQUATION:
+				setEquation(EQUATION_EDEFAULT);
+				return;
+			case ColladaPackage.PLANE_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.PLANE_TYPE__EQUATION:
-        return EQUATION_EDEFAULT == null ? equation != null : !EQUATION_EDEFAULT.equals(equation);
-      case ColladaPackage.PLANE_TYPE__EXTRA:
-        return extra != null && !extra.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.PLANE_TYPE__EQUATION:
+				return EQUATION_EDEFAULT == null ? equation != null : !EQUATION_EDEFAULT.equals(equation);
+			case ColladaPackage.PLANE_TYPE__EXTRA:
+				return extra != null && !extra.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (equation: ");
-    result.append(equation);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (equation: ");
+		result.append(equation);
+		result.append(')');
+		return result.toString();
+	}
 
 } //PlaneTypeImpl

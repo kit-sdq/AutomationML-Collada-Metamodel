@@ -15,29 +15,27 @@ import org.khronos.collada.GlSampler2D;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Gl Sampler2 D</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class GlSampler2DImpl extends FxSampler2DCommonImpl implements GlSampler2D {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected GlSampler2DImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getGlSampler2D();
-  }
+		return ColladaPackage.eINSTANCE.getGlSampler2D();
+	}
 
 } //GlSampler2DImpl

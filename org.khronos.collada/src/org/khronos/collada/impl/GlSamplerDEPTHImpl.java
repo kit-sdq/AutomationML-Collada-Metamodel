@@ -15,29 +15,27 @@ import org.khronos.collada.GlSamplerDEPTH;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Gl Sampler DEPTH</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class GlSamplerDEPTHImpl extends FxSamplerDEPTHCommonImpl implements GlSamplerDEPTH {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected GlSamplerDEPTHImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getGlSamplerDEPTH();
-  }
+		return ColladaPackage.eINSTANCE.getGlSamplerDEPTH();
+	}
 
 } //GlSamplerDEPTHImpl

@@ -33,289 +33,283 @@ import org.khronos.collada.ExtraType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.CapsuleTypeImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link org.khronos.collada.impl.CapsuleTypeImpl#getRadius <em>Radius</em>}</li>
  *   <li>{@link org.khronos.collada.impl.CapsuleTypeImpl#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class CapsuleTypeImpl extends EObjectImpl implements CapsuleType {
 	/**
-   * The default value of the '{@link #getHeight() <em>Height</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getHeight() <em>Height</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getHeight()
-   * @generated
-   * @ordered
-   */
+	 * @see #getHeight()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final double HEIGHT_EDEFAULT = 0.0;
 
 	/**
-   * The cached value of the '{@link #getHeight() <em>Height</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getHeight() <em>Height</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getHeight()
-   * @generated
-   * @ordered
-   */
+	 * @see #getHeight()
+	 * @generated
+	 * @ordered
+	 */
 	protected double height = HEIGHT_EDEFAULT;
 
 	/**
-   * This is true if the Height attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Height attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean heightESet;
 
 	/**
-   * The default value of the '{@link #getRadius() <em>Radius</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRadius() <em>Radius</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getRadius()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRadius()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final List<Double> RADIUS_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getRadius() <em>Radius</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRadius() <em>Radius</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getRadius()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRadius()
+	 * @generated
+	 * @ordered
+	 */
 	protected List<Double> radius = RADIUS_EDEFAULT;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected CapsuleTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getCapsuleType();
-  }
+		return ColladaPackage.eINSTANCE.getCapsuleType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public double getHeight() {
-    return height;
-  }
+		return height;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setHeight(double newHeight) {
-    double oldHeight = height;
-    height = newHeight;
-    boolean oldHeightESet = heightESet;
-    heightESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CAPSULE_TYPE__HEIGHT, oldHeight, height, !oldHeightESet));
-  }
+		double oldHeight = height;
+		height = newHeight;
+		boolean oldHeightESet = heightESet;
+		heightESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CAPSULE_TYPE__HEIGHT, oldHeight, height, !oldHeightESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetHeight() {
-    double oldHeight = height;
-    boolean oldHeightESet = heightESet;
-    height = HEIGHT_EDEFAULT;
-    heightESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.CAPSULE_TYPE__HEIGHT, oldHeight, HEIGHT_EDEFAULT, oldHeightESet));
-  }
+		double oldHeight = height;
+		boolean oldHeightESet = heightESet;
+		height = HEIGHT_EDEFAULT;
+		heightESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.CAPSULE_TYPE__HEIGHT, oldHeight, HEIGHT_EDEFAULT, oldHeightESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetHeight() {
-    return heightESet;
-  }
+		return heightESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public List<Double> getRadius() {
-    return radius;
-  }
+		return radius;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setRadius(List<Double> newRadius) {
-    List<Double> oldRadius = radius;
-    radius = newRadius;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CAPSULE_TYPE__RADIUS, oldRadius, radius));
-  }
+		List<Double> oldRadius = radius;
+		radius = newRadius;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CAPSULE_TYPE__RADIUS, oldRadius, radius));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.CAPSULE_TYPE__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.CAPSULE_TYPE__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.CAPSULE_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.CAPSULE_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.CAPSULE_TYPE__HEIGHT:
-        return getHeight();
-      case ColladaPackage.CAPSULE_TYPE__RADIUS:
-        return getRadius();
-      case ColladaPackage.CAPSULE_TYPE__EXTRA:
-        return getExtra();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.CAPSULE_TYPE__HEIGHT:
+				return getHeight();
+			case ColladaPackage.CAPSULE_TYPE__RADIUS:
+				return getRadius();
+			case ColladaPackage.CAPSULE_TYPE__EXTRA:
+				return getExtra();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.CAPSULE_TYPE__HEIGHT:
-        setHeight((Double)newValue);
-        return;
-      case ColladaPackage.CAPSULE_TYPE__RADIUS:
-        setRadius((List<Double>)newValue);
-        return;
-      case ColladaPackage.CAPSULE_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.CAPSULE_TYPE__HEIGHT:
+				setHeight((Double)newValue);
+				return;
+			case ColladaPackage.CAPSULE_TYPE__RADIUS:
+				setRadius((List<Double>)newValue);
+				return;
+			case ColladaPackage.CAPSULE_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.CAPSULE_TYPE__HEIGHT:
-        unsetHeight();
-        return;
-      case ColladaPackage.CAPSULE_TYPE__RADIUS:
-        setRadius(RADIUS_EDEFAULT);
-        return;
-      case ColladaPackage.CAPSULE_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.CAPSULE_TYPE__HEIGHT:
+				unsetHeight();
+				return;
+			case ColladaPackage.CAPSULE_TYPE__RADIUS:
+				setRadius(RADIUS_EDEFAULT);
+				return;
+			case ColladaPackage.CAPSULE_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.CAPSULE_TYPE__HEIGHT:
-        return isSetHeight();
-      case ColladaPackage.CAPSULE_TYPE__RADIUS:
-        return RADIUS_EDEFAULT == null ? radius != null : !RADIUS_EDEFAULT.equals(radius);
-      case ColladaPackage.CAPSULE_TYPE__EXTRA:
-        return extra != null && !extra.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.CAPSULE_TYPE__HEIGHT:
+				return isSetHeight();
+			case ColladaPackage.CAPSULE_TYPE__RADIUS:
+				return RADIUS_EDEFAULT == null ? radius != null : !RADIUS_EDEFAULT.equals(radius);
+			case ColladaPackage.CAPSULE_TYPE__EXTRA:
+				return extra != null && !extra.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (height: ");
-    if (heightESet) result.append(height); else result.append("<unset>");
-    result.append(", radius: ");
-    result.append(radius);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (height: ");
+		if (heightESet) result.append(height); else result.append("<unset>");
+		result.append(", radius: ");
+		result.append(radius);
+		result.append(')');
+		return result.toString();
+	}
 
 } //CapsuleTypeImpl

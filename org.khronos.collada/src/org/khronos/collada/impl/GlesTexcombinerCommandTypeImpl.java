@@ -27,299 +27,288 @@ import org.khronos.collada.GlesTextureConstantType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.GlesTexcombinerCommandTypeImpl#getConstant <em>Constant</em>}</li>
  *   <li>{@link org.khronos.collada.impl.GlesTexcombinerCommandTypeImpl#getRGB <em>RGB</em>}</li>
  *   <li>{@link org.khronos.collada.impl.GlesTexcombinerCommandTypeImpl#getAlpha <em>Alpha</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class GlesTexcombinerCommandTypeImpl extends EObjectImpl implements GlesTexcombinerCommandType {
 	/**
-   * The cached value of the '{@link #getConstant() <em>Constant</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getConstant() <em>Constant</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getConstant()
-   * @generated
-   * @ordered
-   */
+	 * @see #getConstant()
+	 * @generated
+	 * @ordered
+	 */
 	protected GlesTextureConstantType constant;
 
 	/**
-   * The cached value of the '{@link #getRGB() <em>RGB</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRGB() <em>RGB</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getRGB()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRGB()
+	 * @generated
+	 * @ordered
+	 */
 	protected GlesTexcombinerCommandRGBType rGB;
 
 	/**
-   * The cached value of the '{@link #getAlpha() <em>Alpha</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAlpha() <em>Alpha</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getAlpha()
-   * @generated
-   * @ordered
-   */
+	 * @see #getAlpha()
+	 * @generated
+	 * @ordered
+	 */
 	protected GlesTexcombinerCommandAlphaType alpha;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected GlesTexcombinerCommandTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getGlesTexcombinerCommandType();
-  }
+		return ColladaPackage.eINSTANCE.getGlesTexcombinerCommandType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public GlesTextureConstantType getConstant() {
-    return constant;
-  }
+		return constant;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetConstant(GlesTextureConstantType newConstant, NotificationChain msgs) {
-    GlesTextureConstantType oldConstant = constant;
-    constant = newConstant;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, oldConstant, newConstant);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		GlesTextureConstantType oldConstant = constant;
+		constant = newConstant;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, oldConstant, newConstant);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setConstant(GlesTextureConstantType newConstant) {
-    if (newConstant != constant)
-    {
-      NotificationChain msgs = null;
-      if (constant != null)
-        msgs = ((InternalEObject)constant).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, null, msgs);
-      if (newConstant != null)
-        msgs = ((InternalEObject)newConstant).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, null, msgs);
-      msgs = basicSetConstant(newConstant, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, newConstant, newConstant));
-  }
+		if (newConstant != constant) {
+			NotificationChain msgs = null;
+			if (constant != null)
+				msgs = ((InternalEObject)constant).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, null, msgs);
+			if (newConstant != null)
+				msgs = ((InternalEObject)newConstant).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, null, msgs);
+			msgs = basicSetConstant(newConstant, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT, newConstant, newConstant));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public GlesTexcombinerCommandRGBType getRGB() {
-    return rGB;
-  }
+		return rGB;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetRGB(GlesTexcombinerCommandRGBType newRGB, NotificationChain msgs) {
-    GlesTexcombinerCommandRGBType oldRGB = rGB;
-    rGB = newRGB;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, oldRGB, newRGB);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		GlesTexcombinerCommandRGBType oldRGB = rGB;
+		rGB = newRGB;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, oldRGB, newRGB);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setRGB(GlesTexcombinerCommandRGBType newRGB) {
-    if (newRGB != rGB)
-    {
-      NotificationChain msgs = null;
-      if (rGB != null)
-        msgs = ((InternalEObject)rGB).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, null, msgs);
-      if (newRGB != null)
-        msgs = ((InternalEObject)newRGB).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, null, msgs);
-      msgs = basicSetRGB(newRGB, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, newRGB, newRGB));
-  }
+		if (newRGB != rGB) {
+			NotificationChain msgs = null;
+			if (rGB != null)
+				msgs = ((InternalEObject)rGB).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, null, msgs);
+			if (newRGB != null)
+				msgs = ((InternalEObject)newRGB).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, null, msgs);
+			msgs = basicSetRGB(newRGB, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB, newRGB, newRGB));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public GlesTexcombinerCommandAlphaType getAlpha() {
-    return alpha;
-  }
+		return alpha;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetAlpha(GlesTexcombinerCommandAlphaType newAlpha, NotificationChain msgs) {
-    GlesTexcombinerCommandAlphaType oldAlpha = alpha;
-    alpha = newAlpha;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, oldAlpha, newAlpha);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		GlesTexcombinerCommandAlphaType oldAlpha = alpha;
+		alpha = newAlpha;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, oldAlpha, newAlpha);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setAlpha(GlesTexcombinerCommandAlphaType newAlpha) {
-    if (newAlpha != alpha)
-    {
-      NotificationChain msgs = null;
-      if (alpha != null)
-        msgs = ((InternalEObject)alpha).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, null, msgs);
-      if (newAlpha != null)
-        msgs = ((InternalEObject)newAlpha).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, null, msgs);
-      msgs = basicSetAlpha(newAlpha, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, newAlpha, newAlpha));
-  }
+		if (newAlpha != alpha) {
+			NotificationChain msgs = null;
+			if (alpha != null)
+				msgs = ((InternalEObject)alpha).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, null, msgs);
+			if (newAlpha != null)
+				msgs = ((InternalEObject)newAlpha).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, null, msgs);
+			msgs = basicSetAlpha(newAlpha, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA, newAlpha, newAlpha));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
-        return basicSetConstant(null, msgs);
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
-        return basicSetRGB(null, msgs);
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
-        return basicSetAlpha(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
+				return basicSetConstant(null, msgs);
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
+				return basicSetRGB(null, msgs);
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
+				return basicSetAlpha(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
-        return getConstant();
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
-        return getRGB();
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
-        return getAlpha();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
+				return getConstant();
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
+				return getRGB();
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
+				return getAlpha();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
-        setConstant((GlesTextureConstantType)newValue);
-        return;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
-        setRGB((GlesTexcombinerCommandRGBType)newValue);
-        return;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
-        setAlpha((GlesTexcombinerCommandAlphaType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
+				setConstant((GlesTextureConstantType)newValue);
+				return;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
+				setRGB((GlesTexcombinerCommandRGBType)newValue);
+				return;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
+				setAlpha((GlesTexcombinerCommandAlphaType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
-        setConstant((GlesTextureConstantType)null);
-        return;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
-        setRGB((GlesTexcombinerCommandRGBType)null);
-        return;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
-        setAlpha((GlesTexcombinerCommandAlphaType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
+				setConstant((GlesTextureConstantType)null);
+				return;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
+				setRGB((GlesTexcombinerCommandRGBType)null);
+				return;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
+				setAlpha((GlesTexcombinerCommandAlphaType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
-        return constant != null;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
-        return rGB != null;
-      case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
-        return alpha != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__CONSTANT:
+				return constant != null;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__RGB:
+				return rGB != null;
+			case ColladaPackage.GLES_TEXCOMBINER_COMMAND_TYPE__ALPHA:
+				return alpha != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //GlesTexcombinerCommandTypeImpl

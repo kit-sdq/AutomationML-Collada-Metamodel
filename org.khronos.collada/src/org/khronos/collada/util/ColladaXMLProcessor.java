@@ -25,31 +25,30 @@ import org.khronos.collada.ColladaPackage;
 public class ColladaXMLProcessor extends XMLProcessor {
 
 	/**
-   * Public constructor to instantiate the helper.
-   * <!-- begin-user-doc -->
+	 * Public constructor to instantiate the helper.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ColladaXMLProcessor() {
-    super((EPackage.Registry.INSTANCE));
-    ColladaPackage.eINSTANCE.eClass();
-  }
+		super((EPackage.Registry.INSTANCE));
+		ColladaPackage.eINSTANCE.eClass();
+	}
 	
 	/**
-   * Register for "*" and "xml" file extensions the ColladaResourceFactoryImpl factory.
-   * <!-- begin-user-doc -->
+	 * Register for "*" and "xml" file extensions the ColladaResourceFactoryImpl factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected Map<String, Resource.Factory> getRegistrations() {
-    if (registrations == null)
-    {
-      super.getRegistrations();
-      registrations.put(XML_EXTENSION, new ColladaResourceFactoryImpl());
-      registrations.put(STAR_EXTENSION, new ColladaResourceFactoryImpl());
-    }
-    return registrations;
-  }
+		if (registrations == null) {
+			super.getRegistrations();
+			registrations.put(XML_EXTENSION, new ColladaResourceFactoryImpl());
+			registrations.put(STAR_EXTENSION, new ColladaResourceFactoryImpl());
+		}
+		return registrations;
+	}
 
 } //ColladaXMLProcessor

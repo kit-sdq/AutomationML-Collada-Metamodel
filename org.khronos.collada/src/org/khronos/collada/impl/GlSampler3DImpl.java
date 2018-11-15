@@ -15,29 +15,27 @@ import org.khronos.collada.GlSampler3D;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Gl Sampler3 D</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class GlSampler3DImpl extends FxSampler3DCommonImpl implements GlSampler3D {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected GlSampler3DImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getGlSampler3D();
-  }
+		return ColladaPackage.eINSTANCE.getGlSampler3D();
+	}
 
 } //GlSampler3DImpl

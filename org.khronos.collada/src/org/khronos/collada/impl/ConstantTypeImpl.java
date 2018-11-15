@@ -27,6 +27,7 @@ import org.khronos.collada.ConstantType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.ConstantTypeImpl#getEmission <em>Emission</em>}</li>
  *   <li>{@link org.khronos.collada.impl.ConstantTypeImpl#getReflective <em>Reflective</em>}</li>
@@ -35,495 +36,477 @@ import org.khronos.collada.ConstantType;
  *   <li>{@link org.khronos.collada.impl.ConstantTypeImpl#getTransparency <em>Transparency</em>}</li>
  *   <li>{@link org.khronos.collada.impl.ConstantTypeImpl#getIndexOfRefraction <em>Index Of Refraction</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class ConstantTypeImpl extends EObjectImpl implements ConstantType {
 	/**
-   * The cached value of the '{@link #getEmission() <em>Emission</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getEmission() <em>Emission</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getEmission()
-   * @generated
-   * @ordered
-   */
+	 * @see #getEmission()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonColorOrTextureType emission;
 
 	/**
-   * The cached value of the '{@link #getReflective() <em>Reflective</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getReflective() <em>Reflective</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getReflective()
-   * @generated
-   * @ordered
-   */
+	 * @see #getReflective()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonColorOrTextureType reflective;
 
 	/**
-   * The cached value of the '{@link #getReflectivity() <em>Reflectivity</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getReflectivity() <em>Reflectivity</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getReflectivity()
-   * @generated
-   * @ordered
-   */
+	 * @see #getReflectivity()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonFloatOrParamType reflectivity;
 
 	/**
-   * The cached value of the '{@link #getTransparent() <em>Transparent</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTransparent() <em>Transparent</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getTransparent()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTransparent()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonTransparentType transparent;
 
 	/**
-   * The cached value of the '{@link #getTransparency() <em>Transparency</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTransparency() <em>Transparency</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getTransparency()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTransparency()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonFloatOrParamType transparency;
 
 	/**
-   * The cached value of the '{@link #getIndexOfRefraction() <em>Index Of Refraction</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getIndexOfRefraction() <em>Index Of Refraction</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getIndexOfRefraction()
-   * @generated
-   * @ordered
-   */
+	 * @see #getIndexOfRefraction()
+	 * @generated
+	 * @ordered
+	 */
 	protected CommonFloatOrParamType indexOfRefraction;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ConstantTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getConstantType();
-  }
+		return ColladaPackage.eINSTANCE.getConstantType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonColorOrTextureType getEmission() {
-    return emission;
-  }
+		return emission;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetEmission(CommonColorOrTextureType newEmission, NotificationChain msgs) {
-    CommonColorOrTextureType oldEmission = emission;
-    emission = newEmission;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__EMISSION, oldEmission, newEmission);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonColorOrTextureType oldEmission = emission;
+		emission = newEmission;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__EMISSION, oldEmission, newEmission);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setEmission(CommonColorOrTextureType newEmission) {
-    if (newEmission != emission)
-    {
-      NotificationChain msgs = null;
-      if (emission != null)
-        msgs = ((InternalEObject)emission).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__EMISSION, null, msgs);
-      if (newEmission != null)
-        msgs = ((InternalEObject)newEmission).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__EMISSION, null, msgs);
-      msgs = basicSetEmission(newEmission, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__EMISSION, newEmission, newEmission));
-  }
+		if (newEmission != emission) {
+			NotificationChain msgs = null;
+			if (emission != null)
+				msgs = ((InternalEObject)emission).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__EMISSION, null, msgs);
+			if (newEmission != null)
+				msgs = ((InternalEObject)newEmission).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__EMISSION, null, msgs);
+			msgs = basicSetEmission(newEmission, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__EMISSION, newEmission, newEmission));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonColorOrTextureType getReflective() {
-    return reflective;
-  }
+		return reflective;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetReflective(CommonColorOrTextureType newReflective, NotificationChain msgs) {
-    CommonColorOrTextureType oldReflective = reflective;
-    reflective = newReflective;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVE, oldReflective, newReflective);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonColorOrTextureType oldReflective = reflective;
+		reflective = newReflective;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVE, oldReflective, newReflective);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setReflective(CommonColorOrTextureType newReflective) {
-    if (newReflective != reflective)
-    {
-      NotificationChain msgs = null;
-      if (reflective != null)
-        msgs = ((InternalEObject)reflective).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVE, null, msgs);
-      if (newReflective != null)
-        msgs = ((InternalEObject)newReflective).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVE, null, msgs);
-      msgs = basicSetReflective(newReflective, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVE, newReflective, newReflective));
-  }
+		if (newReflective != reflective) {
+			NotificationChain msgs = null;
+			if (reflective != null)
+				msgs = ((InternalEObject)reflective).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVE, null, msgs);
+			if (newReflective != null)
+				msgs = ((InternalEObject)newReflective).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVE, null, msgs);
+			msgs = basicSetReflective(newReflective, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVE, newReflective, newReflective));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonFloatOrParamType getReflectivity() {
-    return reflectivity;
-  }
+		return reflectivity;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetReflectivity(CommonFloatOrParamType newReflectivity, NotificationChain msgs) {
-    CommonFloatOrParamType oldReflectivity = reflectivity;
-    reflectivity = newReflectivity;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, oldReflectivity, newReflectivity);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonFloatOrParamType oldReflectivity = reflectivity;
+		reflectivity = newReflectivity;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, oldReflectivity, newReflectivity);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setReflectivity(CommonFloatOrParamType newReflectivity) {
-    if (newReflectivity != reflectivity)
-    {
-      NotificationChain msgs = null;
-      if (reflectivity != null)
-        msgs = ((InternalEObject)reflectivity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, null, msgs);
-      if (newReflectivity != null)
-        msgs = ((InternalEObject)newReflectivity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, null, msgs);
-      msgs = basicSetReflectivity(newReflectivity, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, newReflectivity, newReflectivity));
-  }
+		if (newReflectivity != reflectivity) {
+			NotificationChain msgs = null;
+			if (reflectivity != null)
+				msgs = ((InternalEObject)reflectivity).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, null, msgs);
+			if (newReflectivity != null)
+				msgs = ((InternalEObject)newReflectivity).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, null, msgs);
+			msgs = basicSetReflectivity(newReflectivity, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__REFLECTIVITY, newReflectivity, newReflectivity));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonTransparentType getTransparent() {
-    return transparent;
-  }
+		return transparent;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetTransparent(CommonTransparentType newTransparent, NotificationChain msgs) {
-    CommonTransparentType oldTransparent = transparent;
-    transparent = newTransparent;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENT, oldTransparent, newTransparent);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonTransparentType oldTransparent = transparent;
+		transparent = newTransparent;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENT, oldTransparent, newTransparent);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setTransparent(CommonTransparentType newTransparent) {
-    if (newTransparent != transparent)
-    {
-      NotificationChain msgs = null;
-      if (transparent != null)
-        msgs = ((InternalEObject)transparent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENT, null, msgs);
-      if (newTransparent != null)
-        msgs = ((InternalEObject)newTransparent).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENT, null, msgs);
-      msgs = basicSetTransparent(newTransparent, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENT, newTransparent, newTransparent));
-  }
+		if (newTransparent != transparent) {
+			NotificationChain msgs = null;
+			if (transparent != null)
+				msgs = ((InternalEObject)transparent).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENT, null, msgs);
+			if (newTransparent != null)
+				msgs = ((InternalEObject)newTransparent).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENT, null, msgs);
+			msgs = basicSetTransparent(newTransparent, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENT, newTransparent, newTransparent));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonFloatOrParamType getTransparency() {
-    return transparency;
-  }
+		return transparency;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetTransparency(CommonFloatOrParamType newTransparency, NotificationChain msgs) {
-    CommonFloatOrParamType oldTransparency = transparency;
-    transparency = newTransparency;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, oldTransparency, newTransparency);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonFloatOrParamType oldTransparency = transparency;
+		transparency = newTransparency;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, oldTransparency, newTransparency);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setTransparency(CommonFloatOrParamType newTransparency) {
-    if (newTransparency != transparency)
-    {
-      NotificationChain msgs = null;
-      if (transparency != null)
-        msgs = ((InternalEObject)transparency).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, null, msgs);
-      if (newTransparency != null)
-        msgs = ((InternalEObject)newTransparency).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, null, msgs);
-      msgs = basicSetTransparency(newTransparency, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, newTransparency, newTransparency));
-  }
+		if (newTransparency != transparency) {
+			NotificationChain msgs = null;
+			if (transparency != null)
+				msgs = ((InternalEObject)transparency).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, null, msgs);
+			if (newTransparency != null)
+				msgs = ((InternalEObject)newTransparency).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, null, msgs);
+			msgs = basicSetTransparency(newTransparency, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__TRANSPARENCY, newTransparency, newTransparency));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public CommonFloatOrParamType getIndexOfRefraction() {
-    return indexOfRefraction;
-  }
+		return indexOfRefraction;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetIndexOfRefraction(CommonFloatOrParamType newIndexOfRefraction, NotificationChain msgs) {
-    CommonFloatOrParamType oldIndexOfRefraction = indexOfRefraction;
-    indexOfRefraction = newIndexOfRefraction;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, oldIndexOfRefraction, newIndexOfRefraction);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		CommonFloatOrParamType oldIndexOfRefraction = indexOfRefraction;
+		indexOfRefraction = newIndexOfRefraction;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, oldIndexOfRefraction, newIndexOfRefraction);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setIndexOfRefraction(CommonFloatOrParamType newIndexOfRefraction) {
-    if (newIndexOfRefraction != indexOfRefraction)
-    {
-      NotificationChain msgs = null;
-      if (indexOfRefraction != null)
-        msgs = ((InternalEObject)indexOfRefraction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, null, msgs);
-      if (newIndexOfRefraction != null)
-        msgs = ((InternalEObject)newIndexOfRefraction).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, null, msgs);
-      msgs = basicSetIndexOfRefraction(newIndexOfRefraction, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, newIndexOfRefraction, newIndexOfRefraction));
-  }
+		if (newIndexOfRefraction != indexOfRefraction) {
+			NotificationChain msgs = null;
+			if (indexOfRefraction != null)
+				msgs = ((InternalEObject)indexOfRefraction).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, null, msgs);
+			if (newIndexOfRefraction != null)
+				msgs = ((InternalEObject)newIndexOfRefraction).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, null, msgs);
+			msgs = basicSetIndexOfRefraction(newIndexOfRefraction, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION, newIndexOfRefraction, newIndexOfRefraction));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.CONSTANT_TYPE__EMISSION:
-        return basicSetEmission(null, msgs);
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
-        return basicSetReflective(null, msgs);
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
-        return basicSetReflectivity(null, msgs);
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
-        return basicSetTransparent(null, msgs);
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
-        return basicSetTransparency(null, msgs);
-      case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
-        return basicSetIndexOfRefraction(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.CONSTANT_TYPE__EMISSION:
+				return basicSetEmission(null, msgs);
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
+				return basicSetReflective(null, msgs);
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
+				return basicSetReflectivity(null, msgs);
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
+				return basicSetTransparent(null, msgs);
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
+				return basicSetTransparency(null, msgs);
+			case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
+				return basicSetIndexOfRefraction(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.CONSTANT_TYPE__EMISSION:
-        return getEmission();
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
-        return getReflective();
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
-        return getReflectivity();
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
-        return getTransparent();
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
-        return getTransparency();
-      case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
-        return getIndexOfRefraction();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.CONSTANT_TYPE__EMISSION:
+				return getEmission();
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
+				return getReflective();
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
+				return getReflectivity();
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
+				return getTransparent();
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
+				return getTransparency();
+			case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
+				return getIndexOfRefraction();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.CONSTANT_TYPE__EMISSION:
-        setEmission((CommonColorOrTextureType)newValue);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
-        setReflective((CommonColorOrTextureType)newValue);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
-        setReflectivity((CommonFloatOrParamType)newValue);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
-        setTransparent((CommonTransparentType)newValue);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
-        setTransparency((CommonFloatOrParamType)newValue);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
-        setIndexOfRefraction((CommonFloatOrParamType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.CONSTANT_TYPE__EMISSION:
+				setEmission((CommonColorOrTextureType)newValue);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
+				setReflective((CommonColorOrTextureType)newValue);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
+				setReflectivity((CommonFloatOrParamType)newValue);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
+				setTransparent((CommonTransparentType)newValue);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
+				setTransparency((CommonFloatOrParamType)newValue);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
+				setIndexOfRefraction((CommonFloatOrParamType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.CONSTANT_TYPE__EMISSION:
-        setEmission((CommonColorOrTextureType)null);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
-        setReflective((CommonColorOrTextureType)null);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
-        setReflectivity((CommonFloatOrParamType)null);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
-        setTransparent((CommonTransparentType)null);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
-        setTransparency((CommonFloatOrParamType)null);
-        return;
-      case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
-        setIndexOfRefraction((CommonFloatOrParamType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.CONSTANT_TYPE__EMISSION:
+				setEmission((CommonColorOrTextureType)null);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
+				setReflective((CommonColorOrTextureType)null);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
+				setReflectivity((CommonFloatOrParamType)null);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
+				setTransparent((CommonTransparentType)null);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
+				setTransparency((CommonFloatOrParamType)null);
+				return;
+			case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
+				setIndexOfRefraction((CommonFloatOrParamType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.CONSTANT_TYPE__EMISSION:
-        return emission != null;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
-        return reflective != null;
-      case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
-        return reflectivity != null;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
-        return transparent != null;
-      case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
-        return transparency != null;
-      case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
-        return indexOfRefraction != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.CONSTANT_TYPE__EMISSION:
+				return emission != null;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVE:
+				return reflective != null;
+			case ColladaPackage.CONSTANT_TYPE__REFLECTIVITY:
+				return reflectivity != null;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENT:
+				return transparent != null;
+			case ColladaPackage.CONSTANT_TYPE__TRANSPARENCY:
+				return transparency != null;
+			case ColladaPackage.CONSTANT_TYPE__INDEX_OF_REFRACTION:
+				return indexOfRefraction != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ConstantTypeImpl

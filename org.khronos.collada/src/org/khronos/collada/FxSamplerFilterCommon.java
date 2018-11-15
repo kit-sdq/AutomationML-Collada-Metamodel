@@ -23,331 +23,331 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum FxSamplerFilterCommon implements Enumerator {
 	/**
-   * The '<em><b>NONE</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NONE</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #NONE_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #NONE_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	NONE(0, "NONE", "NONE"),
 
 	/**
-   * The '<em><b>NEAREST</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEAREST</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #NEAREST_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #NEAREST_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	NEAREST(1, "NEAREST", "NEAREST"),
 
 	/**
-   * The '<em><b>LINEAR</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEAR</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #LINEAR_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEAR_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	LINEAR(2, "LINEAR", "LINEAR"),
 
 	/**
-   * The '<em><b>NEARESTMIPMAPNEAREST</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEARESTMIPMAPNEAREST</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #NEARESTMIPMAPNEAREST_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #NEARESTMIPMAPNEAREST_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	NEARESTMIPMAPNEAREST(3, "NEARESTMIPMAPNEAREST", "NEAREST_MIPMAP_NEAREST"),
 
 	/**
-   * The '<em><b>LINEARMIPMAPNEAREST</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEARMIPMAPNEAREST</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #LINEARMIPMAPNEAREST_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEARMIPMAPNEAREST_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	LINEARMIPMAPNEAREST(4, "LINEARMIPMAPNEAREST", "LINEAR_MIPMAP_NEAREST"),
 
 	/**
-   * The '<em><b>NEARESTMIPMAPLINEAR</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEARESTMIPMAPLINEAR</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #NEARESTMIPMAPLINEAR_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #NEARESTMIPMAPLINEAR_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	NEARESTMIPMAPLINEAR(5, "NEARESTMIPMAPLINEAR", "NEAREST_MIPMAP_LINEAR"),
 
 	/**
-   * The '<em><b>LINEARMIPMAPLINEAR</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEARMIPMAPLINEAR</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #LINEARMIPMAPLINEAR_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEARMIPMAPLINEAR_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	LINEARMIPMAPLINEAR(6, "LINEARMIPMAPLINEAR", "LINEAR_MIPMAP_LINEAR");
 
 	/**
-   * The '<em><b>NONE</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NONE</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>NONE</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #NONE
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #NONE
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int NONE_VALUE = 0;
 
 	/**
-   * The '<em><b>NEAREST</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEAREST</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>NEAREST</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #NEAREST
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #NEAREST
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int NEAREST_VALUE = 1;
 
 	/**
-   * The '<em><b>LINEAR</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEAR</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>LINEAR</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #LINEAR
-   * @model
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEAR
+	 * @model
+	 * @generated
+	 * @ordered
+	 */
 	public static final int LINEAR_VALUE = 2;
 
 	/**
-   * The '<em><b>NEARESTMIPMAPNEAREST</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEARESTMIPMAPNEAREST</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>NEARESTMIPMAPNEAREST</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #NEARESTMIPMAPNEAREST
-   * @model literal="NEAREST_MIPMAP_NEAREST"
-   * @generated
-   * @ordered
-   */
+	 * @see #NEARESTMIPMAPNEAREST
+	 * @model literal="NEAREST_MIPMAP_NEAREST"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int NEARESTMIPMAPNEAREST_VALUE = 3;
 
 	/**
-   * The '<em><b>LINEARMIPMAPNEAREST</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEARMIPMAPNEAREST</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>LINEARMIPMAPNEAREST</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #LINEARMIPMAPNEAREST
-   * @model literal="LINEAR_MIPMAP_NEAREST"
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEARMIPMAPNEAREST
+	 * @model literal="LINEAR_MIPMAP_NEAREST"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int LINEARMIPMAPNEAREST_VALUE = 4;
 
 	/**
-   * The '<em><b>NEARESTMIPMAPLINEAR</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>NEARESTMIPMAPLINEAR</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>NEARESTMIPMAPLINEAR</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #NEARESTMIPMAPLINEAR
-   * @model literal="NEAREST_MIPMAP_LINEAR"
-   * @generated
-   * @ordered
-   */
+	 * @see #NEARESTMIPMAPLINEAR
+	 * @model literal="NEAREST_MIPMAP_LINEAR"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int NEARESTMIPMAPLINEAR_VALUE = 5;
 
 	/**
-   * The '<em><b>LINEARMIPMAPLINEAR</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>LINEARMIPMAPLINEAR</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>LINEARMIPMAPLINEAR</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #LINEARMIPMAPLINEAR
-   * @model literal="LINEAR_MIPMAP_LINEAR"
-   * @generated
-   * @ordered
-   */
+	 * @see #LINEARMIPMAPLINEAR
+	 * @model literal="LINEAR_MIPMAP_LINEAR"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int LINEARMIPMAPLINEAR_VALUE = 6;
 
 	/**
-   * An array of all the '<em><b>Fx Sampler Filter Common</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Fx Sampler Filter Common</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private static final FxSamplerFilterCommon[] VALUES_ARRAY =
-		new FxSamplerFilterCommon[]
-    {
-      NONE,
-      NEAREST,
-      LINEAR,
-      NEARESTMIPMAPNEAREST,
-      LINEARMIPMAPNEAREST,
-      NEARESTMIPMAPLINEAR,
-      LINEARMIPMAPLINEAR,
-    };
+		new FxSamplerFilterCommon[] {
+			NONE,
+			NEAREST,
+			LINEAR,
+			NEARESTMIPMAPNEAREST,
+			LINEARMIPMAPNEAREST,
+			NEARESTMIPMAPLINEAR,
+			LINEARMIPMAPLINEAR,
+		};
 
 	/**
-   * A public read-only list of all the '<em><b>Fx Sampler Filter Common</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Fx Sampler Filter Common</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static final List<FxSamplerFilterCommon> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-   * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified literal value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static FxSamplerFilterCommon get(String literal) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      FxSamplerFilterCommon result = VALUES_ARRAY[i];
-      if (result.toString().equals(literal))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			FxSamplerFilterCommon result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified name.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static FxSamplerFilterCommon getByName(String name) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      FxSamplerFilterCommon result = VALUES_ARRAY[i];
-      if (result.getName().equals(name))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			FxSamplerFilterCommon result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified integer value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Fx Sampler Filter Common</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static FxSamplerFilterCommon get(int value) {
-    switch (value)
-    {
-      case NONE_VALUE: return NONE;
-      case NEAREST_VALUE: return NEAREST;
-      case LINEAR_VALUE: return LINEAR;
-      case NEARESTMIPMAPNEAREST_VALUE: return NEARESTMIPMAPNEAREST;
-      case LINEARMIPMAPNEAREST_VALUE: return LINEARMIPMAPNEAREST;
-      case NEARESTMIPMAPLINEAR_VALUE: return NEARESTMIPMAPLINEAR;
-      case LINEARMIPMAPLINEAR_VALUE: return LINEARMIPMAPLINEAR;
-    }
-    return null;
-  }
+		switch (value) {
+			case NONE_VALUE: return NONE;
+			case NEAREST_VALUE: return NEAREST;
+			case LINEAR_VALUE: return LINEAR;
+			case NEARESTMIPMAPNEAREST_VALUE: return NEARESTMIPMAPNEAREST;
+			case LINEARMIPMAPNEAREST_VALUE: return LINEARMIPMAPNEAREST;
+			case NEARESTMIPMAPLINEAR_VALUE: return NEARESTMIPMAPLINEAR;
+			case LINEARMIPMAPLINEAR_VALUE: return LINEARMIPMAPLINEAR;
+		}
+		return null;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final int value;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String name;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String literal;
 
 	/**
-   * Only this class can construct instances.
-   * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private FxSamplerFilterCommon(int value, String name, String literal) {
-    this.value = value;
-    this.name = name;
-    this.literal = literal;
-  }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public int getValue() {
-    return value;
-  }
+	  return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getName() {
-    return name;
-  }
+	  return name;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getLiteral() {
-    return literal;
-  }
+	  return literal;
+	}
 
 	/**
-   * Returns the literal value of the enumerator, which is its string representation.
-   * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    return literal;
-  }
+		return literal;
+	}
 	
 } //FxSamplerFilterCommon

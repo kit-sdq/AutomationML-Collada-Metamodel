@@ -33,201 +33,195 @@ import org.khronos.collada.ExtraType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.BoxTypeImpl#getHalfExtents <em>Half Extents</em>}</li>
  *   <li>{@link org.khronos.collada.impl.BoxTypeImpl#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class BoxTypeImpl extends EObjectImpl implements BoxType {
 	/**
-   * The default value of the '{@link #getHalfExtents() <em>Half Extents</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getHalfExtents() <em>Half Extents</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getHalfExtents()
-   * @generated
-   * @ordered
-   */
+	 * @see #getHalfExtents()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final List<Double> HALF_EXTENTS_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getHalfExtents() <em>Half Extents</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getHalfExtents() <em>Half Extents</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getHalfExtents()
-   * @generated
-   * @ordered
-   */
+	 * @see #getHalfExtents()
+	 * @generated
+	 * @ordered
+	 */
 	protected List<Double> halfExtents = HALF_EXTENTS_EDEFAULT;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected BoxTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getBoxType();
-  }
+		return ColladaPackage.eINSTANCE.getBoxType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public List<Double> getHalfExtents() {
-    return halfExtents;
-  }
+		return halfExtents;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setHalfExtents(List<Double> newHalfExtents) {
-    List<Double> oldHalfExtents = halfExtents;
-    halfExtents = newHalfExtents;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BOX_TYPE__HALF_EXTENTS, oldHalfExtents, halfExtents));
-  }
+		List<Double> oldHalfExtents = halfExtents;
+		halfExtents = newHalfExtents;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.BOX_TYPE__HALF_EXTENTS, oldHalfExtents, halfExtents));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.BOX_TYPE__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.BOX_TYPE__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.BOX_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.BOX_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
-        return getHalfExtents();
-      case ColladaPackage.BOX_TYPE__EXTRA:
-        return getExtra();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
+				return getHalfExtents();
+			case ColladaPackage.BOX_TYPE__EXTRA:
+				return getExtra();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
-        setHalfExtents((List<Double>)newValue);
-        return;
-      case ColladaPackage.BOX_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
+				setHalfExtents((List<Double>)newValue);
+				return;
+			case ColladaPackage.BOX_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
-        setHalfExtents(HALF_EXTENTS_EDEFAULT);
-        return;
-      case ColladaPackage.BOX_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
+				setHalfExtents(HALF_EXTENTS_EDEFAULT);
+				return;
+			case ColladaPackage.BOX_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
-        return HALF_EXTENTS_EDEFAULT == null ? halfExtents != null : !HALF_EXTENTS_EDEFAULT.equals(halfExtents);
-      case ColladaPackage.BOX_TYPE__EXTRA:
-        return extra != null && !extra.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.BOX_TYPE__HALF_EXTENTS:
+				return HALF_EXTENTS_EDEFAULT == null ? halfExtents != null : !HALF_EXTENTS_EDEFAULT.equals(halfExtents);
+			case ColladaPackage.BOX_TYPE__EXTRA:
+				return extra != null && !extra.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (halfExtents: ");
-    result.append(halfExtents);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (halfExtents: ");
+		result.append(halfExtents);
+		result.append(')');
+		return result.toString();
+	}
 
 } //BoxTypeImpl

@@ -35,6 +35,7 @@ import org.khronos.collada.TargetableFloat3;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.RefAttachmentTypeImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link org.khronos.collada.impl.RefAttachmentTypeImpl#getTranslate <em>Translate</em>}</li>
@@ -42,265 +43,258 @@ import org.khronos.collada.TargetableFloat3;
  *   <li>{@link org.khronos.collada.impl.RefAttachmentTypeImpl#getExtra <em>Extra</em>}</li>
  *   <li>{@link org.khronos.collada.impl.RefAttachmentTypeImpl#getRigidBody <em>Rigid Body</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class RefAttachmentTypeImpl extends EObjectImpl implements RefAttachmentType {
 	/**
-   * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getGroup() <em>Group</em>}' attribute list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getGroup()
-   * @generated
-   * @ordered
-   */
+	 * @see #getGroup()
+	 * @generated
+	 * @ordered
+	 */
 	protected FeatureMap group;
 
 	/**
-   * The default value of the '{@link #getRigidBody() <em>Rigid Body</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getRigidBody() <em>Rigid Body</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getRigidBody()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRigidBody()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String RIGID_BODY_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getRigidBody() <em>Rigid Body</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getRigidBody() <em>Rigid Body</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getRigidBody()
-   * @generated
-   * @ordered
-   */
+	 * @see #getRigidBody()
+	 * @generated
+	 * @ordered
+	 */
 	protected String rigidBody = RIGID_BODY_EDEFAULT;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected RefAttachmentTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getRefAttachmentType();
-  }
+		return ColladaPackage.eINSTANCE.getRefAttachmentType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FeatureMap getGroup() {
-    if (group == null)
-    {
-      group = new BasicFeatureMap(this, ColladaPackage.REF_ATTACHMENT_TYPE__GROUP);
-    }
-    return group;
-  }
+		if (group == null) {
+			group = new BasicFeatureMap(this, ColladaPackage.REF_ATTACHMENT_TYPE__GROUP);
+		}
+		return group;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<TargetableFloat3> getTranslate() {
-    return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Translate());
-  }
+		return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Translate());
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<RotateType> getRotate() {
-    return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Rotate());
-  }
+		return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Rotate());
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Extra());
-  }
+		return getGroup().list(ColladaPackage.eINSTANCE.getRefAttachmentType_Extra());
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getRigidBody() {
-    return rigidBody;
-  }
+		return rigidBody;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setRigidBody(String newRigidBody) {
-    String oldRigidBody = rigidBody;
-    rigidBody = newRigidBody;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY, oldRigidBody, rigidBody));
-  }
+		String oldRigidBody = rigidBody;
+		rigidBody = newRigidBody;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY, oldRigidBody, rigidBody));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
-        return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
-      case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
-        return ((InternalEList<?>)getTranslate()).basicRemove(otherEnd, msgs);
-      case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
-        return ((InternalEList<?>)getRotate()).basicRemove(otherEnd, msgs);
-      case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
+				return ((InternalEList<?>)getGroup()).basicRemove(otherEnd, msgs);
+			case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
+				return ((InternalEList<?>)getTranslate()).basicRemove(otherEnd, msgs);
+			case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
+				return ((InternalEList<?>)getRotate()).basicRemove(otherEnd, msgs);
+			case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
-        if (coreType) return getGroup();
-        return ((FeatureMap.Internal)getGroup()).getWrapper();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
-        return getTranslate();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
-        return getRotate();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
-        return getExtra();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
-        return getRigidBody();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
+				if (coreType) return getGroup();
+				return ((FeatureMap.Internal)getGroup()).getWrapper();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
+				return getTranslate();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
+				return getRotate();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
+				return getExtra();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
+				return getRigidBody();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
-        ((FeatureMap.Internal)getGroup()).set(newValue);
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
-        getTranslate().clear();
-        getTranslate().addAll((Collection<? extends TargetableFloat3>)newValue);
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
-        getRotate().clear();
-        getRotate().addAll((Collection<? extends RotateType>)newValue);
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
-        setRigidBody((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
+				((FeatureMap.Internal)getGroup()).set(newValue);
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
+				getTranslate().clear();
+				getTranslate().addAll((Collection<? extends TargetableFloat3>)newValue);
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
+				getRotate().clear();
+				getRotate().addAll((Collection<? extends RotateType>)newValue);
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
+				setRigidBody((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
-        getGroup().clear();
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
-        getTranslate().clear();
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
-        getRotate().clear();
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-      case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
-        setRigidBody(RIGID_BODY_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
+				getGroup().clear();
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
+				getTranslate().clear();
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
+				getRotate().clear();
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+			case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
+				setRigidBody(RIGID_BODY_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
-        return group != null && !group.isEmpty();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
-        return !getTranslate().isEmpty();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
-        return !getRotate().isEmpty();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
-        return !getExtra().isEmpty();
-      case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
-        return RIGID_BODY_EDEFAULT == null ? rigidBody != null : !RIGID_BODY_EDEFAULT.equals(rigidBody);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.REF_ATTACHMENT_TYPE__GROUP:
+				return group != null && !group.isEmpty();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__TRANSLATE:
+				return !getTranslate().isEmpty();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__ROTATE:
+				return !getRotate().isEmpty();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__EXTRA:
+				return !getExtra().isEmpty();
+			case ColladaPackage.REF_ATTACHMENT_TYPE__RIGID_BODY:
+				return RIGID_BODY_EDEFAULT == null ? rigidBody != null : !RIGID_BODY_EDEFAULT.equals(rigidBody);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (group: ");
-    result.append(group);
-    result.append(", rigidBody: ");
-    result.append(rigidBody);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (group: ");
+		result.append(group);
+		result.append(", rigidBody: ");
+		result.append(rigidBody);
+		result.append(')');
+		return result.toString();
+	}
 
 } //RefAttachmentTypeImpl

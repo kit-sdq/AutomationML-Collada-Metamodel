@@ -22,238 +22,234 @@ import org.khronos.collada.MaterialShininessType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.MaterialShininessTypeImpl#getParam <em>Param</em>}</li>
  *   <li>{@link org.khronos.collada.impl.MaterialShininessTypeImpl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class MaterialShininessTypeImpl extends EObjectImpl implements MaterialShininessType {
 	/**
-   * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String PARAM_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected String param = PARAM_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final double VALUE_EDEFAULT = 0.0;
 
 	/**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected double value = VALUE_EDEFAULT;
 
 	/**
-   * This is true if the Value attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Value attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean valueESet;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected MaterialShininessTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getMaterialShininessType();
-  }
+		return ColladaPackage.eINSTANCE.getMaterialShininessType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getParam() {
-    return param;
-  }
+		return param;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setParam(String newParam) {
-    String oldParam = param;
-    param = newParam;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM, oldParam, param));
-  }
+		String oldParam = param;
+		param = newParam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM, oldParam, param));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public double getValue() {
-    return value;
-  }
+		return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setValue(double newValue) {
-    double oldValue = value;
-    value = newValue;
-    boolean oldValueESet = valueESet;
-    valueESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE, oldValue, value, !oldValueESet));
-  }
+		double oldValue = value;
+		value = newValue;
+		boolean oldValueESet = valueESet;
+		valueESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE, oldValue, value, !oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetValue() {
-    double oldValue = value;
-    boolean oldValueESet = valueESet;
-    value = VALUE_EDEFAULT;
-    valueESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
-  }
+		double oldValue = value;
+		boolean oldValueESet = valueESet;
+		value = VALUE_EDEFAULT;
+		valueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetValue() {
-    return valueESet;
-  }
+		return valueESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
-        return getParam();
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
-        return getValue();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
+				return getParam();
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
+				return getValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
-        setParam((String)newValue);
-        return;
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
-        setValue((Double)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
+				setParam((String)newValue);
+				return;
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
+				setValue((Double)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
-        setParam(PARAM_EDEFAULT);
-        return;
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
-        unsetValue();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
+				setParam(PARAM_EDEFAULT);
+				return;
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
+				unsetValue();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
-        return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
-      case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
-        return isSetValue();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__PARAM:
+				return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
+			case ColladaPackage.MATERIAL_SHININESS_TYPE__VALUE:
+				return isSetValue();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (param: ");
-    result.append(param);
-    result.append(", value: ");
-    if (valueESet) result.append(value); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (param: ");
+		result.append(param);
+		result.append(", value: ");
+		if (valueESet) result.append(value); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //MaterialShininessTypeImpl

@@ -27,299 +27,288 @@ import org.khronos.collada.ZpassType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.StencilOpTypeImpl#getFail <em>Fail</em>}</li>
  *   <li>{@link org.khronos.collada.impl.StencilOpTypeImpl#getZfail <em>Zfail</em>}</li>
  *   <li>{@link org.khronos.collada.impl.StencilOpTypeImpl#getZpass <em>Zpass</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class StencilOpTypeImpl extends EObjectImpl implements StencilOpType {
 	/**
-   * The cached value of the '{@link #getFail() <em>Fail</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getFail() <em>Fail</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getFail()
-   * @generated
-   * @ordered
-   */
+	 * @see #getFail()
+	 * @generated
+	 * @ordered
+	 */
 	protected FailType fail;
 
 	/**
-   * The cached value of the '{@link #getZfail() <em>Zfail</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getZfail() <em>Zfail</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getZfail()
-   * @generated
-   * @ordered
-   */
+	 * @see #getZfail()
+	 * @generated
+	 * @ordered
+	 */
 	protected ZfailType1 zfail;
 
 	/**
-   * The cached value of the '{@link #getZpass() <em>Zpass</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getZpass() <em>Zpass</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getZpass()
-   * @generated
-   * @ordered
-   */
+	 * @see #getZpass()
+	 * @generated
+	 * @ordered
+	 */
 	protected ZpassType zpass;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StencilOpTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getStencilOpType();
-  }
+		return ColladaPackage.eINSTANCE.getStencilOpType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public FailType getFail() {
-    return fail;
-  }
+		return fail;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetFail(FailType newFail, NotificationChain msgs) {
-    FailType oldFail = fail;
-    fail = newFail;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__FAIL, oldFail, newFail);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		FailType oldFail = fail;
+		fail = newFail;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__FAIL, oldFail, newFail);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setFail(FailType newFail) {
-    if (newFail != fail)
-    {
-      NotificationChain msgs = null;
-      if (fail != null)
-        msgs = ((InternalEObject)fail).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__FAIL, null, msgs);
-      if (newFail != null)
-        msgs = ((InternalEObject)newFail).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__FAIL, null, msgs);
-      msgs = basicSetFail(newFail, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__FAIL, newFail, newFail));
-  }
+		if (newFail != fail) {
+			NotificationChain msgs = null;
+			if (fail != null)
+				msgs = ((InternalEObject)fail).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__FAIL, null, msgs);
+			if (newFail != null)
+				msgs = ((InternalEObject)newFail).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__FAIL, null, msgs);
+			msgs = basicSetFail(newFail, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__FAIL, newFail, newFail));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ZfailType1 getZfail() {
-    return zfail;
-  }
+		return zfail;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetZfail(ZfailType1 newZfail, NotificationChain msgs) {
-    ZfailType1 oldZfail = zfail;
-    zfail = newZfail;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZFAIL, oldZfail, newZfail);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		ZfailType1 oldZfail = zfail;
+		zfail = newZfail;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZFAIL, oldZfail, newZfail);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setZfail(ZfailType1 newZfail) {
-    if (newZfail != zfail)
-    {
-      NotificationChain msgs = null;
-      if (zfail != null)
-        msgs = ((InternalEObject)zfail).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZFAIL, null, msgs);
-      if (newZfail != null)
-        msgs = ((InternalEObject)newZfail).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZFAIL, null, msgs);
-      msgs = basicSetZfail(newZfail, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZFAIL, newZfail, newZfail));
-  }
+		if (newZfail != zfail) {
+			NotificationChain msgs = null;
+			if (zfail != null)
+				msgs = ((InternalEObject)zfail).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZFAIL, null, msgs);
+			if (newZfail != null)
+				msgs = ((InternalEObject)newZfail).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZFAIL, null, msgs);
+			msgs = basicSetZfail(newZfail, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZFAIL, newZfail, newZfail));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ZpassType getZpass() {
-    return zpass;
-  }
+		return zpass;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetZpass(ZpassType newZpass, NotificationChain msgs) {
-    ZpassType oldZpass = zpass;
-    zpass = newZpass;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZPASS, oldZpass, newZpass);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		ZpassType oldZpass = zpass;
+		zpass = newZpass;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZPASS, oldZpass, newZpass);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setZpass(ZpassType newZpass) {
-    if (newZpass != zpass)
-    {
-      NotificationChain msgs = null;
-      if (zpass != null)
-        msgs = ((InternalEObject)zpass).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZPASS, null, msgs);
-      if (newZpass != null)
-        msgs = ((InternalEObject)newZpass).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZPASS, null, msgs);
-      msgs = basicSetZpass(newZpass, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZPASS, newZpass, newZpass));
-  }
+		if (newZpass != zpass) {
+			NotificationChain msgs = null;
+			if (zpass != null)
+				msgs = ((InternalEObject)zpass).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZPASS, null, msgs);
+			if (newZpass != null)
+				msgs = ((InternalEObject)newZpass).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.STENCIL_OP_TYPE__ZPASS, null, msgs);
+			msgs = basicSetZpass(newZpass, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.STENCIL_OP_TYPE__ZPASS, newZpass, newZpass));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.STENCIL_OP_TYPE__FAIL:
-        return basicSetFail(null, msgs);
-      case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
-        return basicSetZfail(null, msgs);
-      case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
-        return basicSetZpass(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.STENCIL_OP_TYPE__FAIL:
+				return basicSetFail(null, msgs);
+			case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
+				return basicSetZfail(null, msgs);
+			case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
+				return basicSetZpass(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.STENCIL_OP_TYPE__FAIL:
-        return getFail();
-      case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
-        return getZfail();
-      case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
-        return getZpass();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.STENCIL_OP_TYPE__FAIL:
+				return getFail();
+			case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
+				return getZfail();
+			case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
+				return getZpass();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.STENCIL_OP_TYPE__FAIL:
-        setFail((FailType)newValue);
-        return;
-      case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
-        setZfail((ZfailType1)newValue);
-        return;
-      case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
-        setZpass((ZpassType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.STENCIL_OP_TYPE__FAIL:
+				setFail((FailType)newValue);
+				return;
+			case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
+				setZfail((ZfailType1)newValue);
+				return;
+			case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
+				setZpass((ZpassType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.STENCIL_OP_TYPE__FAIL:
-        setFail((FailType)null);
-        return;
-      case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
-        setZfail((ZfailType1)null);
-        return;
-      case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
-        setZpass((ZpassType)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.STENCIL_OP_TYPE__FAIL:
+				setFail((FailType)null);
+				return;
+			case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
+				setZfail((ZfailType1)null);
+				return;
+			case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
+				setZpass((ZpassType)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.STENCIL_OP_TYPE__FAIL:
-        return fail != null;
-      case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
-        return zfail != null;
-      case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
-        return zpass != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.STENCIL_OP_TYPE__FAIL:
+				return fail != null;
+			case ColladaPackage.STENCIL_OP_TYPE__ZFAIL:
+				return zfail != null;
+			case ColladaPackage.STENCIL_OP_TYPE__ZPASS:
+				return zpass != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //StencilOpTypeImpl

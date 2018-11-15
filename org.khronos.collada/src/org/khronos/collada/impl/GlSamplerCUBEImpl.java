@@ -15,29 +15,27 @@ import org.khronos.collada.GlSamplerCUBE;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Gl Sampler CUBE</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class GlSamplerCUBEImpl extends FxSamplerCUBECommonImpl implements GlSamplerCUBE {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected GlSamplerCUBEImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getGlSamplerCUBE();
-  }
+		return ColladaPackage.eINSTANCE.getGlSamplerCUBE();
+	}
 
 } //GlSamplerCUBEImpl

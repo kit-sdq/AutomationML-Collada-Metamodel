@@ -31,269 +31,261 @@ import org.khronos.collada.RenderType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.RenderTypeImpl#getLayer <em>Layer</em>}</li>
  *   <li>{@link org.khronos.collada.impl.RenderTypeImpl#getInstanceEffect <em>Instance Effect</em>}</li>
  *   <li>{@link org.khronos.collada.impl.RenderTypeImpl#getCameraNode <em>Camera Node</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class RenderTypeImpl extends EObjectImpl implements RenderType {
 	/**
-   * The cached value of the '{@link #getLayer() <em>Layer</em>}' attribute list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getLayer() <em>Layer</em>}' attribute list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getLayer()
-   * @generated
-   * @ordered
-   */
+	 * @see #getLayer()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<String> layer;
 
 	/**
-   * The cached value of the '{@link #getInstanceEffect() <em>Instance Effect</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getInstanceEffect() <em>Instance Effect</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getInstanceEffect()
-   * @generated
-   * @ordered
-   */
+	 * @see #getInstanceEffect()
+	 * @generated
+	 * @ordered
+	 */
 	protected InstanceEffectType instanceEffect;
 
 	/**
-   * The default value of the '{@link #getCameraNode() <em>Camera Node</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getCameraNode() <em>Camera Node</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getCameraNode()
-   * @generated
-   * @ordered
-   */
+	 * @see #getCameraNode()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String CAMERA_NODE_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getCameraNode() <em>Camera Node</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getCameraNode() <em>Camera Node</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getCameraNode()
-   * @generated
-   * @ordered
-   */
+	 * @see #getCameraNode()
+	 * @generated
+	 * @ordered
+	 */
 	protected String cameraNode = CAMERA_NODE_EDEFAULT;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected RenderTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getRenderType();
-  }
+		return ColladaPackage.eINSTANCE.getRenderType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<String> getLayer() {
-    if (layer == null)
-    {
-      layer = new EDataTypeEList<String>(String.class, this, ColladaPackage.RENDER_TYPE__LAYER);
-    }
-    return layer;
-  }
+		if (layer == null) {
+			layer = new EDataTypeEList<String>(String.class, this, ColladaPackage.RENDER_TYPE__LAYER);
+		}
+		return layer;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public InstanceEffectType getInstanceEffect() {
-    return instanceEffect;
-  }
+		return instanceEffect;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetInstanceEffect(InstanceEffectType newInstanceEffect, NotificationChain msgs) {
-    InstanceEffectType oldInstanceEffect = instanceEffect;
-    instanceEffect = newInstanceEffect;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, oldInstanceEffect, newInstanceEffect);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		InstanceEffectType oldInstanceEffect = instanceEffect;
+		instanceEffect = newInstanceEffect;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, oldInstanceEffect, newInstanceEffect);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setInstanceEffect(InstanceEffectType newInstanceEffect) {
-    if (newInstanceEffect != instanceEffect)
-    {
-      NotificationChain msgs = null;
-      if (instanceEffect != null)
-        msgs = ((InternalEObject)instanceEffect).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, null, msgs);
-      if (newInstanceEffect != null)
-        msgs = ((InternalEObject)newInstanceEffect).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, null, msgs);
-      msgs = basicSetInstanceEffect(newInstanceEffect, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, newInstanceEffect, newInstanceEffect));
-  }
+		if (newInstanceEffect != instanceEffect) {
+			NotificationChain msgs = null;
+			if (instanceEffect != null)
+				msgs = ((InternalEObject)instanceEffect).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, null, msgs);
+			if (newInstanceEffect != null)
+				msgs = ((InternalEObject)newInstanceEffect).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, null, msgs);
+			msgs = basicSetInstanceEffect(newInstanceEffect, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT, newInstanceEffect, newInstanceEffect));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getCameraNode() {
-    return cameraNode;
-  }
+		return cameraNode;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setCameraNode(String newCameraNode) {
-    String oldCameraNode = cameraNode;
-    cameraNode = newCameraNode;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__CAMERA_NODE, oldCameraNode, cameraNode));
-  }
+		String oldCameraNode = cameraNode;
+		cameraNode = newCameraNode;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.RENDER_TYPE__CAMERA_NODE, oldCameraNode, cameraNode));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
-        return basicSetInstanceEffect(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
+				return basicSetInstanceEffect(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.RENDER_TYPE__LAYER:
-        return getLayer();
-      case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
-        return getInstanceEffect();
-      case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
-        return getCameraNode();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.RENDER_TYPE__LAYER:
+				return getLayer();
+			case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
+				return getInstanceEffect();
+			case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
+				return getCameraNode();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.RENDER_TYPE__LAYER:
-        getLayer().clear();
-        getLayer().addAll((Collection<? extends String>)newValue);
-        return;
-      case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
-        setInstanceEffect((InstanceEffectType)newValue);
-        return;
-      case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
-        setCameraNode((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.RENDER_TYPE__LAYER:
+				getLayer().clear();
+				getLayer().addAll((Collection<? extends String>)newValue);
+				return;
+			case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
+				setInstanceEffect((InstanceEffectType)newValue);
+				return;
+			case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
+				setCameraNode((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.RENDER_TYPE__LAYER:
-        getLayer().clear();
-        return;
-      case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
-        setInstanceEffect((InstanceEffectType)null);
-        return;
-      case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
-        setCameraNode(CAMERA_NODE_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.RENDER_TYPE__LAYER:
+				getLayer().clear();
+				return;
+			case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
+				setInstanceEffect((InstanceEffectType)null);
+				return;
+			case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
+				setCameraNode(CAMERA_NODE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.RENDER_TYPE__LAYER:
-        return layer != null && !layer.isEmpty();
-      case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
-        return instanceEffect != null;
-      case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
-        return CAMERA_NODE_EDEFAULT == null ? cameraNode != null : !CAMERA_NODE_EDEFAULT.equals(cameraNode);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.RENDER_TYPE__LAYER:
+				return layer != null && !layer.isEmpty();
+			case ColladaPackage.RENDER_TYPE__INSTANCE_EFFECT:
+				return instanceEffect != null;
+			case ColladaPackage.RENDER_TYPE__CAMERA_NODE:
+				return CAMERA_NODE_EDEFAULT == null ? cameraNode != null : !CAMERA_NODE_EDEFAULT.equals(cameraNode);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (layer: ");
-    result.append(layer);
-    result.append(", cameraNode: ");
-    result.append(cameraNode);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (layer: ");
+		result.append(layer);
+		result.append(", cameraNode: ");
+		result.append(cameraNode);
+		result.append(')');
+		return result.toString();
+	}
 
 } //RenderTypeImpl

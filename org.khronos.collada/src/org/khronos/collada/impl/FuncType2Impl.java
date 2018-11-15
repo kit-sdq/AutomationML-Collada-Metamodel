@@ -23,238 +23,234 @@ import org.khronos.collada.GlFuncType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.FuncType2Impl#getParam <em>Param</em>}</li>
  *   <li>{@link org.khronos.collada.impl.FuncType2Impl#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class FuncType2Impl extends EObjectImpl implements FuncType2 {
 	/**
-   * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String PARAM_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getParam() <em>Param</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getParam()
-   * @generated
-   * @ordered
-   */
+	 * @see #getParam()
+	 * @generated
+	 * @ordered
+	 */
 	protected String param = PARAM_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final GlFuncType VALUE_EDEFAULT = GlFuncType.ALWAYS;
 
 	/**
-   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getValue()
-   * @generated
-   * @ordered
-   */
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
 	protected GlFuncType value = VALUE_EDEFAULT;
 
 	/**
-   * This is true if the Value attribute has been set.
-   * <!-- begin-user-doc -->
+	 * This is true if the Value attribute has been set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 * @ordered
+	 */
 	protected boolean valueESet;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FuncType2Impl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getFuncType2();
-  }
+		return ColladaPackage.eINSTANCE.getFuncType2();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getParam() {
-    return param;
-  }
+		return param;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setParam(String newParam) {
-    String oldParam = param;
-    param = newParam;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FUNC_TYPE2__PARAM, oldParam, param));
-  }
+		String oldParam = param;
+		param = newParam;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FUNC_TYPE2__PARAM, oldParam, param));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public GlFuncType getValue() {
-    return value;
-  }
+		return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setValue(GlFuncType newValue) {
-    GlFuncType oldValue = value;
-    value = newValue == null ? VALUE_EDEFAULT : newValue;
-    boolean oldValueESet = valueESet;
-    valueESet = true;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FUNC_TYPE2__VALUE, oldValue, value, !oldValueESet));
-  }
+		GlFuncType oldValue = value;
+		value = newValue == null ? VALUE_EDEFAULT : newValue;
+		boolean oldValueESet = valueESet;
+		valueESet = true;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FUNC_TYPE2__VALUE, oldValue, value, !oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void unsetValue() {
-    GlFuncType oldValue = value;
-    boolean oldValueESet = valueESet;
-    value = VALUE_EDEFAULT;
-    valueESet = false;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FUNC_TYPE2__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
-  }
+		GlFuncType oldValue = value;
+		boolean oldValueESet = valueESet;
+		value = VALUE_EDEFAULT;
+		valueESet = false;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.UNSET, ColladaPackage.FUNC_TYPE2__VALUE, oldValue, VALUE_EDEFAULT, oldValueESet));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean isSetValue() {
-    return valueESet;
-  }
+		return valueESet;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.FUNC_TYPE2__PARAM:
-        return getParam();
-      case ColladaPackage.FUNC_TYPE2__VALUE:
-        return getValue();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.FUNC_TYPE2__PARAM:
+				return getParam();
+			case ColladaPackage.FUNC_TYPE2__VALUE:
+				return getValue();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.FUNC_TYPE2__PARAM:
-        setParam((String)newValue);
-        return;
-      case ColladaPackage.FUNC_TYPE2__VALUE:
-        setValue((GlFuncType)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.FUNC_TYPE2__PARAM:
+				setParam((String)newValue);
+				return;
+			case ColladaPackage.FUNC_TYPE2__VALUE:
+				setValue((GlFuncType)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FUNC_TYPE2__PARAM:
-        setParam(PARAM_EDEFAULT);
-        return;
-      case ColladaPackage.FUNC_TYPE2__VALUE:
-        unsetValue();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FUNC_TYPE2__PARAM:
+				setParam(PARAM_EDEFAULT);
+				return;
+			case ColladaPackage.FUNC_TYPE2__VALUE:
+				unsetValue();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FUNC_TYPE2__PARAM:
-        return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
-      case ColladaPackage.FUNC_TYPE2__VALUE:
-        return isSetValue();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FUNC_TYPE2__PARAM:
+				return PARAM_EDEFAULT == null ? param != null : !PARAM_EDEFAULT.equals(param);
+			case ColladaPackage.FUNC_TYPE2__VALUE:
+				return isSetValue();
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (param: ");
-    result.append(param);
-    result.append(", value: ");
-    if (valueESet) result.append(value); else result.append("<unset>");
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (param: ");
+		result.append(param);
+		result.append(", value: ");
+		if (valueESet) result.append(value); else result.append("<unset>");
+		result.append(')');
+		return result.toString();
+	}
 
 } //FuncType2Impl

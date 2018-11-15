@@ -28,196 +28,196 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum VersionType implements Enumerator {
 	/**
-   * The '<em><b>140</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>140</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #_140_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #_140_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	_140(0, "_140", "1.4.0"),
 
 	/**
-   * The '<em><b>141</b></em>' literal object.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>141</b></em>' literal object.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #_141_VALUE
-   * @generated
-   * @ordered
-   */
+	 * @see #_141_VALUE
+	 * @generated
+	 * @ordered
+	 */
 	_141(1, "_141", "1.4.1");
 
 	/**
-   * The '<em><b>140</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>140</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>140</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #_140
-   * @model literal="1.4.0"
-   * @generated
-   * @ordered
-   */
+	 * @see #_140
+	 * @model literal="1.4.0"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int _140_VALUE = 0;
 
 	/**
-   * The '<em><b>141</b></em>' literal value.
-   * <!-- begin-user-doc -->
+	 * The '<em><b>141</b></em>' literal value.
+	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>141</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-   * @see #_141
-   * @model literal="1.4.1"
-   * @generated
-   * @ordered
-   */
+	 * @see #_141
+	 * @model literal="1.4.1"
+	 * @generated
+	 * @ordered
+	 */
 	public static final int _141_VALUE = 1;
 
 	/**
-   * An array of all the '<em><b>Version Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * An array of all the '<em><b>Version Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private static final VersionType[] VALUES_ARRAY =
-		new VersionType[]
-    {
-      _140,
-      _141,
-    };
+		new VersionType[] {
+			_140,
+			_141,
+		};
 
 	/**
-   * A public read-only list of all the '<em><b>Version Type</b></em>' enumerators.
-   * <!-- begin-user-doc -->
+	 * A public read-only list of all the '<em><b>Version Type</b></em>' enumerators.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static final List<VersionType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-   * Returns the '<em><b>Version Type</b></em>' literal with the specified literal value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Version Type</b></em>' literal with the specified literal value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param literal the literal.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static VersionType get(String literal) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      VersionType result = VALUES_ARRAY[i];
-      if (result.toString().equals(literal))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			VersionType result = VALUES_ARRAY[i];
+			if (result.toString().equals(literal)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Version Type</b></em>' literal with the specified name.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Version Type</b></em>' literal with the specified name.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param name the name.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static VersionType getByName(String name) {
-    for (int i = 0; i < VALUES_ARRAY.length; ++i)
-    {
-      VersionType result = VALUES_ARRAY[i];
-      if (result.getName().equals(name))
-      {
-        return result;
-      }
-    }
-    return null;
-  }
+		for (int i = 0; i < VALUES_ARRAY.length; ++i) {
+			VersionType result = VALUES_ARRAY[i];
+			if (result.getName().equals(name)) {
+				return result;
+			}
+		}
+		return null;
+	}
 
 	/**
-   * Returns the '<em><b>Version Type</b></em>' literal with the specified integer value.
-   * <!-- begin-user-doc -->
+	 * Returns the '<em><b>Version Type</b></em>' literal with the specified integer value.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @param value the integer value.
+	 * @return the matching enumerator or <code>null</code>.
+	 * @generated
+	 */
 	public static VersionType get(int value) {
-    switch (value)
-    {
-      case _140_VALUE: return _140;
-      case _141_VALUE: return _141;
-    }
-    return null;
-  }
+		switch (value) {
+			case _140_VALUE: return _140;
+			case _141_VALUE: return _141;
+		}
+		return null;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final int value;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String name;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private final String literal;
 
 	/**
-   * Only this class can construct instances.
-   * <!-- begin-user-doc -->
+	 * Only this class can construct instances.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	private VersionType(int value, String name, String literal) {
-    this.value = value;
-    this.name = name;
-    this.literal = literal;
-  }
+		this.value = value;
+		this.name = name;
+		this.literal = literal;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public int getValue() {
-    return value;
-  }
+	  return value;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getName() {
-    return name;
-  }
+	  return name;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getLiteral() {
-    return literal;
-  }
+	  return literal;
+	}
 
 	/**
-   * Returns the literal value of the enumerator, which is its string representation.
-   * <!-- begin-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string representation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    return literal;
-  }
+		return literal;
+	}
 	
 } //VersionType

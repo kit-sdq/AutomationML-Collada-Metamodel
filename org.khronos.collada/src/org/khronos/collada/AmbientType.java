@@ -15,10 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.AmbientType#getColor <em>Color</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.khronos.collada.ColladaPackage#getAmbientType()
  * @model extendedMetaData="name='ambient_._type' kind='elementOnly'"
@@ -26,32 +26,32 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface AmbientType extends EObject {
 	/**
-   * Returns the value of the '<em><b>Color</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Color</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * 
-   * 												The color element contains three floating point numbers specifying the color of the light.
-   * 												The color element must occur exactly once.  
-   * 												
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Color</em>' containment reference.
-   * @see #setColor(TargetableFloat3)
-   * @see org.khronos.collada.ColladaPackage#getAmbientType_Color()
-   * @model containment="true" required="true"
-   *        extendedMetaData="kind='element' name='color' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * 
+	 * 												The color element contains three floating point numbers specifying the color of the light.
+	 * 												The color element must occur exactly once.  
+	 * 												
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Color</em>' containment reference.
+	 * @see #setColor(TargetableFloat3)
+	 * @see org.khronos.collada.ColladaPackage#getAmbientType_Color()
+	 * @model containment="true" required="true"
+	 *        extendedMetaData="kind='element' name='color' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	TargetableFloat3 getColor();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.AmbientType#getColor <em>Color</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.AmbientType#getColor <em>Color</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Color</em>' containment reference.
-   * @see #getColor()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Color</em>' containment reference.
+	 * @see #getColor()
+	 * @generated
+	 */
 	void setColor(TargetableFloat3 value);
 
 } // AmbientType

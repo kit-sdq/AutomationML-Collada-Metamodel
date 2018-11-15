@@ -22,204 +22,200 @@ import org.khronos.collada.FxIncludeCommon;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.FxIncludeCommonImpl#getSid <em>Sid</em>}</li>
  *   <li>{@link org.khronos.collada.impl.FxIncludeCommonImpl#getUrl <em>Url</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class FxIncludeCommonImpl extends EObjectImpl implements FxIncludeCommon {
 	/**
-   * The default value of the '{@link #getSid() <em>Sid</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getSid() <em>Sid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSid()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSid()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String SID_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getSid() <em>Sid</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSid() <em>Sid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSid()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSid()
+	 * @generated
+	 * @ordered
+	 */
 	protected String sid = SID_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getUrl()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String URL_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getUrl()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected String url = URL_EDEFAULT;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FxIncludeCommonImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getFxIncludeCommon();
-  }
+		return ColladaPackage.eINSTANCE.getFxIncludeCommon();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getSid() {
-    return sid;
-  }
+		return sid;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setSid(String newSid) {
-    String oldSid = sid;
-    sid = newSid;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_INCLUDE_COMMON__SID, oldSid, sid));
-  }
+		String oldSid = sid;
+		sid = newSid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_INCLUDE_COMMON__SID, oldSid, sid));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getUrl() {
-    return url;
-  }
+		return url;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setUrl(String newUrl) {
-    String oldUrl = url;
-    url = newUrl;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_INCLUDE_COMMON__URL, oldUrl, url));
-  }
+		String oldUrl = url;
+		url = newUrl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.FX_INCLUDE_COMMON__URL, oldUrl, url));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_INCLUDE_COMMON__SID:
-        return getSid();
-      case ColladaPackage.FX_INCLUDE_COMMON__URL:
-        return getUrl();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_INCLUDE_COMMON__SID:
+				return getSid();
+			case ColladaPackage.FX_INCLUDE_COMMON__URL:
+				return getUrl();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_INCLUDE_COMMON__SID:
-        setSid((String)newValue);
-        return;
-      case ColladaPackage.FX_INCLUDE_COMMON__URL:
-        setUrl((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_INCLUDE_COMMON__SID:
+				setSid((String)newValue);
+				return;
+			case ColladaPackage.FX_INCLUDE_COMMON__URL:
+				setUrl((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_INCLUDE_COMMON__SID:
-        setSid(SID_EDEFAULT);
-        return;
-      case ColladaPackage.FX_INCLUDE_COMMON__URL:
-        setUrl(URL_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_INCLUDE_COMMON__SID:
+				setSid(SID_EDEFAULT);
+				return;
+			case ColladaPackage.FX_INCLUDE_COMMON__URL:
+				setUrl(URL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.FX_INCLUDE_COMMON__SID:
-        return SID_EDEFAULT == null ? sid != null : !SID_EDEFAULT.equals(sid);
-      case ColladaPackage.FX_INCLUDE_COMMON__URL:
-        return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.FX_INCLUDE_COMMON__SID:
+				return SID_EDEFAULT == null ? sid != null : !SID_EDEFAULT.equals(sid);
+			case ColladaPackage.FX_INCLUDE_COMMON__URL:
+				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (sid: ");
-    result.append(sid);
-    result.append(", url: ");
-    result.append(url);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (sid: ");
+		result.append(sid);
+		result.append(", url: ");
+		result.append(url);
+		result.append(')');
+		return result.toString();
+	}
 
 } //FxIncludeCommonImpl

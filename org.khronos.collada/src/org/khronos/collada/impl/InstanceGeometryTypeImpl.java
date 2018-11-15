@@ -33,6 +33,7 @@ import org.khronos.collada.InstanceGeometryType;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.impl.InstanceGeometryTypeImpl#getBindMaterial <em>Bind Material</em>}</li>
  *   <li>{@link org.khronos.collada.impl.InstanceGeometryTypeImpl#getExtra <em>Extra</em>}</li>
@@ -40,370 +41,361 @@ import org.khronos.collada.InstanceGeometryType;
  *   <li>{@link org.khronos.collada.impl.InstanceGeometryTypeImpl#getSid <em>Sid</em>}</li>
  *   <li>{@link org.khronos.collada.impl.InstanceGeometryTypeImpl#getUrl <em>Url</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class InstanceGeometryTypeImpl extends EObjectImpl implements InstanceGeometryType {
 	/**
-   * The cached value of the '{@link #getBindMaterial() <em>Bind Material</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getBindMaterial() <em>Bind Material</em>}' containment reference.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getBindMaterial()
-   * @generated
-   * @ordered
-   */
+	 * @see #getBindMaterial()
+	 * @generated
+	 * @ordered
+	 */
 	protected BindMaterialType bindMaterial;
 
 	/**
-   * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getExtra() <em>Extra</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getExtra()
-   * @generated
-   * @ordered
-   */
+	 * @see #getExtra()
+	 * @generated
+	 * @ordered
+	 */
 	protected EList<ExtraType> extra;
 
 	/**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
 	protected String name = NAME_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getSid() <em>Sid</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getSid() <em>Sid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSid()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSid()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String SID_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getSid() <em>Sid</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getSid() <em>Sid</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getSid()
-   * @generated
-   * @ordered
-   */
+	 * @see #getSid()
+	 * @generated
+	 * @ordered
+	 */
 	protected String sid = SID_EDEFAULT;
 
 	/**
-   * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The default value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getUrl()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String URL_EDEFAULT = null;
 
 	/**
-   * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getUrl() <em>Url</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #getUrl()
-   * @generated
-   * @ordered
-   */
+	 * @see #getUrl()
+	 * @generated
+	 * @ordered
+	 */
 	protected String url = URL_EDEFAULT;
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected InstanceGeometryTypeImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ColladaPackage.eINSTANCE.getInstanceGeometryType();
-  }
+		return ColladaPackage.eINSTANCE.getInstanceGeometryType();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public BindMaterialType getBindMaterial() {
-    return bindMaterial;
-  }
+		return bindMaterial;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public NotificationChain basicSetBindMaterial(BindMaterialType newBindMaterial, NotificationChain msgs) {
-    BindMaterialType oldBindMaterial = bindMaterial;
-    bindMaterial = newBindMaterial;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, oldBindMaterial, newBindMaterial);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		BindMaterialType oldBindMaterial = bindMaterial;
+		bindMaterial = newBindMaterial;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, oldBindMaterial, newBindMaterial);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setBindMaterial(BindMaterialType newBindMaterial) {
-    if (newBindMaterial != bindMaterial)
-    {
-      NotificationChain msgs = null;
-      if (bindMaterial != null)
-        msgs = ((InternalEObject)bindMaterial).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, null, msgs);
-      if (newBindMaterial != null)
-        msgs = ((InternalEObject)newBindMaterial).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, null, msgs);
-      msgs = basicSetBindMaterial(newBindMaterial, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, newBindMaterial, newBindMaterial));
-  }
+		if (newBindMaterial != bindMaterial) {
+			NotificationChain msgs = null;
+			if (bindMaterial != null)
+				msgs = ((InternalEObject)bindMaterial).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, null, msgs);
+			if (newBindMaterial != null)
+				msgs = ((InternalEObject)newBindMaterial).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, null, msgs);
+			msgs = basicSetBindMaterial(newBindMaterial, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL, newBindMaterial, newBindMaterial));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ExtraType> getExtra() {
-    if (extra == null)
-    {
-      extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA);
-    }
-    return extra;
-  }
+		if (extra == null) {
+			extra = new EObjectContainmentEList<ExtraType>(ExtraType.class, this, ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA);
+		}
+		return extra;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getName() {
-    return name;
-  }
+		return name;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setName(String newName) {
-    String oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME, oldName, name));
-  }
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME, oldName, name));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getSid() {
-    return sid;
-  }
+		return sid;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setSid(String newSid) {
-    String oldSid = sid;
-    sid = newSid;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID, oldSid, sid));
-  }
+		String oldSid = sid;
+		sid = newSid;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID, oldSid, sid));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public String getUrl() {
-    return url;
-  }
+		return url;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public void setUrl(String newUrl) {
-    String oldUrl = url;
-    url = newUrl;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL, oldUrl, url));
-  }
+		String oldUrl = url;
+		url = newUrl;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL, oldUrl, url));
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-    switch (featureID)
-    {
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
-        return basicSetBindMaterial(null, msgs);
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
-        return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
+				return basicSetBindMaterial(null, msgs);
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
+				return ((InternalEList<?>)getExtra()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-    switch (featureID)
-    {
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
-        return getBindMaterial();
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
-        return getExtra();
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
-        return getName();
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
-        return getSid();
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
-        return getUrl();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
+				return getBindMaterial();
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
+				return getExtra();
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
+				return getName();
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
+				return getSid();
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
+				return getUrl();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
-    switch (featureID)
-    {
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
-        setBindMaterial((BindMaterialType)newValue);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
-        getExtra().clear();
-        getExtra().addAll((Collection<? extends ExtraType>)newValue);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
-        setName((String)newValue);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
-        setSid((String)newValue);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
-        setUrl((String)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
+				setBindMaterial((BindMaterialType)newValue);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
+				getExtra().clear();
+				getExtra().addAll((Collection<? extends ExtraType>)newValue);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
+				setName((String)newValue);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
+				setSid((String)newValue);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
+				setUrl((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public void eUnset(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
-        setBindMaterial((BindMaterialType)null);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
-        getExtra().clear();
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
-        setName(NAME_EDEFAULT);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
-        setSid(SID_EDEFAULT);
-        return;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
-        setUrl(URL_EDEFAULT);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
+				setBindMaterial((BindMaterialType)null);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
+				getExtra().clear();
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
+				setSid(SID_EDEFAULT);
+				return;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
+				setUrl(URL_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean eIsSet(int featureID) {
-    switch (featureID)
-    {
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
-        return bindMaterial != null;
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
-        return extra != null && !extra.isEmpty();
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
-        return SID_EDEFAULT == null ? sid != null : !SID_EDEFAULT.equals(sid);
-      case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
-        return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__BIND_MATERIAL:
+				return bindMaterial != null;
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__EXTRA:
+				return extra != null && !extra.isEmpty();
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__SID:
+				return SID_EDEFAULT == null ? sid != null : !SID_EDEFAULT.equals(sid);
+			case ColladaPackage.INSTANCE_GEOMETRY_TYPE__URL:
+				return URL_EDEFAULT == null ? url != null : !URL_EDEFAULT.equals(url);
+		}
+		return super.eIsSet(featureID);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public String toString() {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (name: ");
-    result.append(name);
-    result.append(", sid: ");
-    result.append(sid);
-    result.append(", url: ");
-    result.append(url);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", sid: ");
+		result.append(sid);
+		result.append(", url: ");
+		result.append(url);
+		result.append(')');
+		return result.toString();
+	}
 
 } //InstanceGeometryTypeImpl

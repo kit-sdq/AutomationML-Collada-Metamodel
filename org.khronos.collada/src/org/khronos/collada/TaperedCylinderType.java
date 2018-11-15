@@ -19,13 +19,13 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}</li>
  *   <li>{@link org.khronos.collada.TaperedCylinderType#getRadius1 <em>Radius1</em>}</li>
  *   <li>{@link org.khronos.collada.TaperedCylinderType#getRadius2 <em>Radius2</em>}</li>
  *   <li>{@link org.khronos.collada.TaperedCylinderType#getExtra <em>Extra</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType()
  * @model extendedMetaData="name='tapered_cylinder_._type' kind='elementOnly'"
@@ -33,134 +33,134 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface TaperedCylinderType extends EObject {
 	/**
-   * Returns the value of the '<em><b>Height</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * 
-   * 						A float value that represents the length of the cylinder along the Y axis.
-   * 						
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Height</em>' attribute.
-   * @see #isSetHeight()
-   * @see #unsetHeight()
-   * @see #setHeight(double)
-   * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Height()
-   * @model unsettable="true" dataType="org.khronos.collada.Float" required="true"
-   *        extendedMetaData="kind='element' name='height' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * 
+	 * 						A float value that represents the length of the cylinder along the Y axis.
+	 * 						
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Height</em>' attribute.
+	 * @see #isSetHeight()
+	 * @see #unsetHeight()
+	 * @see #setHeight(double)
+	 * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Height()
+	 * @model unsettable="true" dataType="org.khronos.collada.Float" required="true"
+	 *        extendedMetaData="kind='element' name='height' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	double getHeight();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Height</em>' attribute.
-   * @see #isSetHeight()
-   * @see #unsetHeight()
-   * @see #getHeight()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Height</em>' attribute.
+	 * @see #isSetHeight()
+	 * @see #unsetHeight()
+	 * @see #getHeight()
+	 * @generated
+	 */
 	void setHeight(double value);
 
 	/**
-   * Unsets the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Unsets the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #isSetHeight()
-   * @see #getHeight()
-   * @see #setHeight(double)
-   * @generated
-   */
+	 * @see #isSetHeight()
+	 * @see #getHeight()
+	 * @see #setHeight(double)
+	 * @generated
+	 */
 	void unsetHeight();
 
 	/**
-   * Returns whether the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute is set.
-   * <!-- begin-user-doc -->
+	 * Returns whether the value of the '{@link org.khronos.collada.TaperedCylinderType#getHeight <em>Height</em>}' attribute is set.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @return whether the value of the '<em>Height</em>' attribute is set.
-   * @see #unsetHeight()
-   * @see #getHeight()
-   * @see #setHeight(double)
-   * @generated
-   */
+	 * @return whether the value of the '<em>Height</em>' attribute is set.
+	 * @see #unsetHeight()
+	 * @see #getHeight()
+	 * @see #setHeight(double)
+	 * @generated
+	 */
 	boolean isSetHeight();
 
 	/**
-   * Returns the value of the '<em><b>Radius1</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Radius1</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * 
-   * 						Two float values that represent the radii of the tapered cylinder at the positive (height/2) 
-   * 						Y value. Both ends of the tapered cylinder may be elliptical.
-   * 						
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Radius1</em>' attribute.
-   * @see #setRadius1(List)
-   * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Radius1()
-   * @model dataType="org.khronos.collada.Float2" required="true" many="false"
-   *        extendedMetaData="kind='element' name='radius1' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * 
+	 * 						Two float values that represent the radii of the tapered cylinder at the positive (height/2) 
+	 * 						Y value. Both ends of the tapered cylinder may be elliptical.
+	 * 						
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Radius1</em>' attribute.
+	 * @see #setRadius1(List)
+	 * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Radius1()
+	 * @model dataType="org.khronos.collada.Float2" required="true" many="false"
+	 *        extendedMetaData="kind='element' name='radius1' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	List<Double> getRadius1();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getRadius1 <em>Radius1</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getRadius1 <em>Radius1</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Radius1</em>' attribute.
-   * @see #getRadius1()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Radius1</em>' attribute.
+	 * @see #getRadius1()
+	 * @generated
+	 */
 	void setRadius1(List<Double> value);
 
 	/**
-   * Returns the value of the '<em><b>Radius2</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Radius2</b></em>' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * 
-   * 						Two float values that represent the radii of the tapered cylinder at the negative (height/2) 
-   * 						Y value.Both ends of the tapered cylinder may be elliptical.
-   * 						
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Radius2</em>' attribute.
-   * @see #setRadius2(List)
-   * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Radius2()
-   * @model dataType="org.khronos.collada.Float2" required="true" many="false"
-   *        extendedMetaData="kind='element' name='radius2' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * 
+	 * 						Two float values that represent the radii of the tapered cylinder at the negative (height/2) 
+	 * 						Y value.Both ends of the tapered cylinder may be elliptical.
+	 * 						
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Radius2</em>' attribute.
+	 * @see #setRadius2(List)
+	 * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Radius2()
+	 * @model dataType="org.khronos.collada.Float2" required="true" many="false"
+	 *        extendedMetaData="kind='element' name='radius2' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	List<Double> getRadius2();
 
 	/**
-   * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getRadius2 <em>Radius2</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.khronos.collada.TaperedCylinderType#getRadius2 <em>Radius2</em>}' attribute.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Radius2</em>' attribute.
-   * @see #getRadius2()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Radius2</em>' attribute.
+	 * @see #getRadius2()
+	 * @generated
+	 */
 	void setRadius2(List<Double> value);
 
 	/**
-   * Returns the value of the '<em><b>Extra</b></em>' containment reference list.
-   * The list contents are of type {@link org.khronos.collada.ExtraType}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Extra</b></em>' containment reference list.
+	 * The list contents are of type {@link org.khronos.collada.ExtraType}.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * 
-   * 						The extra element may appear any number of times.
-   * 						
-   * <!-- end-model-doc -->
-   * @return the value of the '<em>Extra</em>' containment reference list.
-   * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Extra()
-   * @model containment="true"
-   *        extendedMetaData="kind='element' name='extra' namespace='##targetNamespace'"
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * 
+	 * 						The extra element may appear any number of times.
+	 * 						
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Extra</em>' containment reference list.
+	 * @see org.khronos.collada.ColladaPackage#getTaperedCylinderType_Extra()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='extra' namespace='##targetNamespace'"
+	 * @generated
+	 */
 	EList<ExtraType> getExtra();
 
 } // TaperedCylinderType
